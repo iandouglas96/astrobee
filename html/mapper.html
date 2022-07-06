@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -95,22 +95,10 @@ $(document).ready(function(){initNavTree('mapper.html',''); initResizable(); });
 <p>Observation: as of now, transformation of a map to free-space polygons is not yet implemented.</p>
 <p>The <a class="el" href="mapper.html">Mapper</a> node can be divided in the following tasks:</p>
 <ul>
-<li><code>Trajectory Validator</code> - Validates planned trajectories based on keep-in and keep-out zones.</li>
 <li><code>Octomapper</code> - Maps Astrobee's surroundings using an octomap (octree-based map);</li>
 <li><code>Sentinel</code> - Checks for imminent collisions and notifies the controller if an imminent collision has been detected;</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md339"></a>
-Trajectory Validator</h2>
-<p>The keep-in and keep-out zones describe safe and unsafe areas for flight respectively. Each zone is a cuboid in 3-space, and is fully-defined by the coordinates of two diagonally opposite vertices. The union of all keep-in zones minus the union of all keep-out zones describes the free space in which safe flight can occur. The default zones are provided as JSON formatted files with suffix <code>.json</code> in the <code>astrobee/gds_config</code> directory.</p>
-<p>An example of a keep-in and keep-out zone JSON file might look like this:</p>
-<p>{ "timestamp" : "1475516840", "zones": [ { "name" : "keepout", "safe" : false, "sequence" : [ [ -1.0, -0.3, -3, -0.6, 1.0, 3.0 ], [ 0.5, -0.3, -3, 1.0, 1.0, 3.0 ] ] }, { "name" : "keepin", "safe" : true, "sequence" : [ [ -1.5, -1.5, 0, 1.5, 1.5, 3.0 ] ] } ] }</p>
-<p>Note that the "sequence" field takes an array of 6-vectors, and not just a single 6-vector. Each element of this array represents a zone, with each vector denoting the two coordinates that fully-define the cuboid.</p>
-<p>At any point while running the robot, the operator can load and parse a JSON file: </p><pre class="fragment">`rosrun executive zones_pub -compression none &lt;file_name&gt;.json`
-</pre><p>Or manually through the <code>SetZones</code> service call on the ROS namespace <code>~/mob/set_zones</code>. Please refer to the definition of ff_msgs_SetZones for more information on how to update zones using a ROS service call.</p>
-<p>The resulting data structure is serialized into a binary file. If the option <code>zone_overwrite</code> in <code>mobility/choreographer.config</code> is activated (default), it will overwrite the current <code>&lt;world&gt;.bin</code> file containing the default set of zones at start-up.</p>
-<p>The <a class="el" href="mapper.html">Mapper</a> node publishes <a href="http://docs.ros.org/kinetic/api/visualization_msgs/html/msg/MarkerArray.html">visualization_msgs::MarkerArrays</a> on the namespace <code>~/mob/mapper/zones</code>. When listened to in rviz, these marker arrays render keep-in and keep-out zones as semi-transparent green and red cuboids. The two example zones should be rendered as shown below:</p>
-<p><img src="../images/mobility/zones.png" alt="alt text" title="How the RVIZ user interface draws zones" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md340"></a>
+<h2><a class="anchor" id="autotoc_md451"></a>
 Octomapper</h2>
 <p>The Octomapper portion of the <a class="el" href="mapper.html">Mapper</a> creates a 3D occupancy map of the environment that maps known areas probabilistically. The Octomapper builds a representation of the environment (clutter topology) using measurements from the <a class="el" href="picoflexx.html">PicoFlexx ROS Driver</a> depth sensor. Mapping is done in the world frame, and the TF2 library is used to transform from the sensor frame to the world frame based on dynamic transforms published by the EKF, and static transforms published by <a class="el" href="framestore.html">Framestore</a>. It is based on the following work:</p>
 <div class="fragment"><div class="line">@article{hornung2013octomap,</div>
@@ -152,7 +140,8 @@ Octomapper</h2>
 <li><code>max_range (meters)</code> - Maximum reliable range of the depth camera.</li>
 <li><code>min_range (meters)</code> - Minimum reliable range of the depth camera.</li>
 <li><code>memory_time (seconds)</code> - How long the octomap remembers the fading memory map. It remembers forever when this variable is &lt;= 0.</li>
-<li><code>inflate_radius (meters)</code> - Radial inflation size of the octomap.</li>
+<li><code>robot_radius (meters)</code> - Radius of the robot considered in the planner.</li>
+<li><code>collision_distance (meters)</code> - Minimum distance margin to maintain away from obstacles.</li>
 <li><code>cam_fov (radians)</code> - Camera horizontal field-of-view. The octomap will only update the map in the volume within the fov of the depth cam.</li>
 <li><code>cam_aspect_ratio</code> - Depth camera's width divided by height. Used for c alculating the camera's frustum.</li>
 <li><code>occupancy_threshold</code> - Probability threshold above which a node is considered occupied.</li>
@@ -168,7 +157,7 @@ Octomapper</h2>
 <li><code>mapper/update_inflation_radius</code> - Updates the inflation radius of the map. When called, this service will erase the whole map.</li>
 <li><code>mapper/reset_map</code> - When called, this service will erase the whole map.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md341"></a>
+<h2><a class="anchor" id="autotoc_md452"></a>
 Sentinel</h2>
 <p>As its name suggests, the responsibility of the Sentinel is to look out for the safety of the platform. Unlike the <a class="el" href="namespaceplanner.html">planner</a>, which depends on map-building to proactively plan a safe path through a representation of the world, the sentinel node reacts to sensed data to check if the platform is likely to collide with an obstacle over some fixed time horizon, based on the segment it is currently following.</p>
 <p><img src="../images/mobility/sentinel2.png" alt="alt text" title="Collision avoidance" class="inline"/></p>

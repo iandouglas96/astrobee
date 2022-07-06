@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -94,12 +94,16 @@ $(document).ready(function(){initNavTree('graph__localizer__nodelet_8h.html','')
 <div class="title">graph_localizer_nodelet.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;ff_msgs/Feature2dArray.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;ff_msgs/DepthOdometry.h&gt;</code><br />
+<code>#include &lt;ff_msgs/DepthLandmarks.h&gt;</code><br />
+<code>#include &lt;ff_msgs/Feature2dArray.h&gt;</code><br />
 <code>#include &lt;ff_msgs/FlightMode.h&gt;</code><br />
 <code>#include &lt;ff_msgs/Heartbeat.h&gt;</code><br />
+<code>#include &lt;ff_msgs/ResetMap.h&gt;</code><br />
 <code>#include &lt;ff_msgs/SetEkfInput.h&gt;</code><br />
 <code>#include &lt;ff_msgs/VisualLandmarks.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="ff__nodelet_8h_source.html">ff_util/ff_nodelet.h</a>&gt;</code><br />
+<code>#include &lt;vision_msgs/Detection2DArray.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="graph__localizer__nodelet__params_8h_source.html">graph_localizer/graph_localizer_nodelet_params.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="graph__localizer__wrapper_8h_source.html">graph_localizer/graph_localizer_wrapper.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ros__timer_8h_source.html">localization_common/ros_timer.h</a>&gt;</code><br />
@@ -117,86 +121,86 @@ Include dependency graph for graph_localizer_nodelet.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph__localizer__nodelet_8h__incl.png" border="0" usemap="#alocalization_2graph__localizer_2include_2graph__localizer_2graph__localizer__nodelet_8h" alt=""/></div>
 <map name="localization_2graph__localizer_2include_2graph__localizer_2graph__localizer__nodelet_8h" id="alocalization_2graph__localizer_2include_2graph__localizer_2graph__localizer__nodelet_8h">
-<area shape="rect" title=" " alt="" coords="3107,5,3293,76"/>
-<area shape="rect" title=" " alt="" coords="1751,221,1937,247"/>
-<area shape="rect" title=" " alt="" coords="1961,221,2121,247"/>
-<area shape="rect" title=" " alt="" coords="1933,317,2088,344"/>
-<area shape="rect" title=" " alt="" coords="3349,131,3513,158"/>
-<area shape="rect" title=" " alt="" coords="2146,221,2347,247"/>
-<area shape="rect" href="ff__nodelet_8h.html" title=" " alt="" coords="1466,221,1606,247"/>
-<area shape="rect" title=" " alt="" coords="1459,518,1517,545"/>
-<area shape="rect" title=" " alt="" coords="3410,518,3473,545"/>
-<area shape="rect" href="graph__localizer__nodelet__params_8h.html" title=" " alt="" coords="3537,124,3745,165"/>
-<area shape="rect" href="graph__localizer__wrapper_8h.html" title=" " alt="" coords="3060,124,3223,165"/>
-<area shape="rect" title=" " alt="" coords="6299,421,6447,448"/>
-<area shape="rect" href="ros__timer_8h.html" title=" " alt="" coords="199,310,361,351"/>
-<area shape="rect" href="timer_8h.html" title=" " alt="" coords="14,310,175,351"/>
-<area shape="rect" title=" " alt="" coords="3769,131,3911,158"/>
-<area shape="rect" title=" " alt="" coords="3935,131,4052,158"/>
-<area shape="rect" title=" " alt="" coords="4075,131,4199,158"/>
-<area shape="rect" title=" " alt="" coords="4223,131,4355,158"/>
-<area shape="rect" title=" " alt="" coords="4379,131,4610,158"/>
-<area shape="rect" title=" " alt="" coords="719,317,798,344"/>
-<area shape="rect" title=" " alt="" coords="1371,317,1530,344"/>
-<area shape="rect" title=" " alt="" coords="1555,317,1691,344"/>
-<area shape="rect" title=" " alt="" coords="1715,310,1858,351"/>
-<area shape="rect" title=" " alt="" coords="437,317,643,344"/>
-<area shape="rect" href="config__reader_8h.html" title=" " alt="" coords="2265,310,2418,351"/>
-<area shape="rect" title=" " alt="" coords="823,317,943,344"/>
-<area shape="rect" title=" " alt="" coords="967,317,1099,344"/>
-<area shape="rect" href="ff__faults_8h.html" title=" " alt="" coords="1044,421,1172,448"/>
-<area shape="rect" href="ff__names_8h.html" title=" " alt="" coords="1123,317,1258,344"/>
-<area shape="rect" title=" " alt="" coords="4439,518,4489,545"/>
-<area shape="rect" title=" " alt="" coords="1283,317,1347,344"/>
-<area shape="rect" title=" " alt="" coords="2431,421,2486,448"/>
-<area shape="rect" title=" " alt="" coords="2510,421,2581,448"/>
-<area shape="rect" title=" " alt="" coords="2605,421,2683,448"/>
-<area shape="rect" title=" " alt="" coords="2708,421,2823,448"/>
-<area shape="rect" title=" " alt="" coords="2687,518,2753,545"/>
-<area shape="rect" title=" " alt="" coords="1983,421,2054,448"/>
-<area shape="rect" title=" " alt="" coords="1676,518,1761,545"/>
-<area shape="rect" title=" " alt="" coords="1840,518,1936,545"/>
-<area shape="rect" title=" " alt="" coords="2151,518,2225,545"/>
-<area shape="rect" title=" " alt="" coords="2078,421,2141,448"/>
-<area shape="rect" title=" " alt="" coords="2165,421,2251,448"/>
-<area shape="rect" href="init_8h.html" title=" " alt="" coords="2275,421,2407,448"/>
-<area shape="rect" href="watch__files_8h.html" title=" " alt="" coords="1754,414,1907,455"/>
-<area shape="rect" title=" " alt="" coords="314,518,387,545"/>
-<area shape="rect" title=" " alt="" coords="2524,221,2687,247"/>
-<area shape="rect" title=" " alt="" coords="2711,221,2918,247"/>
-<area shape="rect" href="feature__counts_8h.html" title=" " alt="" coords="2942,213,3114,255"/>
-<area shape="rect" href="graph__localizer_8h.html" title=" " alt="" coords="4433,213,4596,255"/>
-<area shape="rect" href="fan__speed__mode_8h.html" title=" " alt="" coords="3151,414,3353,455"/>
-<area shape="rect" href="graph__localizer__stats_8h.html" title=" " alt="" coords="2883,310,3045,351"/>
-<area shape="rect" title=" " alt="" coords="4809,518,4869,545"/>
-<area shape="rect" href="matched__projections__measurement_8h.html" title=" " alt="" coords="5859,414,6131,455"/>
-<area shape="rect" href="graph__localizer__initializer_8h.html" title=" " alt="" coords="3395,213,3557,255"/>
-<area shape="rect" href="imu__measurement_8h.html" title=" " alt="" coords="6133,310,6336,351"/>
-<area shape="rect" href="sanity__checker_8h.html" title=" " alt="" coords="3632,213,3797,255"/>
-<area shape="rect" title=" " alt="" coords="3139,221,3371,247"/>
-<area shape="rect" href="combined__nav__state__node__updater_8h.html" title=" " alt="" coords="5656,310,5856,351"/>
-<area shape="rect" href="combined__nav__state__node__updater__params_8h.html" title=" " alt="" coords="5037,407,5227,463"/>
-<area shape="rect" href="combined__nav__state_8h.html" title=" " alt="" coords="5229,511,5403,552"/>
-<area shape="rect" href="time_8h.html" title=" " alt="" coords="4757,600,4918,641"/>
-<area shape="rect" href="latest__imu__integrator_8h.html" title=" " alt="" coords="5402,414,5569,455"/>
-<area shape="rect" href="feature__tracker_8h.html" title=" " alt="" coords="4202,414,4374,455"/>
-<area shape="rect" href="feature__point__node__updater_8h.html" title=" " alt="" coords="4806,310,4978,351"/>
-<area shape="rect" href="graph__localizer__params_8h.html" title=" " alt="" coords="2696,310,2859,351"/>
-<area shape="rect" href="robust__smart__projection__pose__factor_8h.html" title=" " alt="" coords="4721,407,4898,463"/>
-<area shape="rect" href="loc__factor__adder_8h.html" title=" " alt="" coords="3357,310,3501,351"/>
-<area shape="rect" href="loc__graph__action__completer_8h.html" title=" " alt="" coords="5003,310,5200,351"/>
-<area shape="rect" href="projection__graph__action__completer_8h.html" title=" " alt="" coords="5224,310,5421,351"/>
-<area shape="rect" href="projection__factor__adder_8h.html" title=" " alt="" coords="3985,310,4175,351"/>
-<area shape="rect" href="rotation__factor__adder_8h.html" title=" " alt="" coords="4200,310,4376,351"/>
-<area shape="rect" href="smart__projection__cumulative__factor__adder_8h.html" title=" " alt="" coords="3577,303,3751,359"/>
-<area shape="rect" href="smart__projection__graph__action__completer_8h.html" title=" " alt="" coords="5446,303,5631,359"/>
-<area shape="rect" href="standstill__factor__adder_8h.html" title=" " alt="" coords="3775,310,3961,351"/>
-<area shape="rect" href="graph__optimizer_8h.html" title=" " alt="" coords="4527,414,4697,455"/>
-<area shape="rect" href="combined__nav__state__covariances_8h.html" title=" " alt="" coords="3121,303,3282,359"/>
-<area shape="rect" href="averager_8h.html" title=" " alt="" coords="270,414,431,455"/>
-<area shape="rect" title=" " alt="" coords="456,421,544,448"/>
-<area shape="rect" title=" " alt="" coords="568,421,715,448"/>
-<area shape="rect" title=" " alt="" coords="27,421,93,448"/>
+<area shape="rect" title=" " alt="" coords="3507,5,3693,76"/>
+<area shape="rect" title=" " alt="" coords="2589,221,2779,247"/>
+<area shape="rect" title=" " alt="" coords="2855,221,3055,247"/>
+<area shape="rect" title=" " alt="" coords="3079,221,3265,247"/>
+<area shape="rect" title=" " alt="" coords="3289,221,3449,247"/>
+<area shape="rect" title=" " alt="" coords="5,317,160,344"/>
+<area shape="rect" title=" " alt="" coords="2992,131,3144,158"/>
+<area shape="rect" title=" " alt="" coords="3169,131,3333,158"/>
+<area shape="rect" title=" " alt="" coords="3474,221,3675,247"/>
+<area shape="rect" href="ff__nodelet_8h.html" title=" " alt="" coords="1175,221,1315,247"/>
+<area shape="rect" title=" " alt="" coords="3851,518,3909,545"/>
+<area shape="rect" title=" " alt="" coords="2605,518,2667,545"/>
+<area shape="rect" title=" " alt="" coords="3699,221,3933,247"/>
+<area shape="rect" href="graph__localizer__nodelet__params_8h.html" title=" " alt="" coords="3663,124,3871,165"/>
+<area shape="rect" href="graph__localizer__wrapper_8h.html" title=" " alt="" coords="4355,124,4517,165"/>
+<area shape="rect" title=" " alt="" coords="5618,421,5766,448"/>
+<area shape="rect" href="ros__timer_8h.html" title=" " alt="" coords="6311,310,6473,351"/>
+<area shape="rect" href="timer_8h.html" title=" " alt="" coords="5847,310,6009,351"/>
+<area shape="rect" title=" " alt="" coords="5948,131,6089,158"/>
+<area shape="rect" title=" " alt="" coords="6113,131,6231,158"/>
+<area shape="rect" title=" " alt="" coords="6254,131,6378,158"/>
+<area shape="rect" title=" " alt="" coords="6402,131,6534,158"/>
+<area shape="rect" title=" " alt="" coords="6558,131,6789,158"/>
+<area shape="rect" title=" " alt="" coords="582,317,661,344"/>
+<area shape="rect" title=" " alt="" coords="1234,317,1393,344"/>
+<area shape="rect" title=" " alt="" coords="1417,317,1553,344"/>
+<area shape="rect" title=" " alt="" coords="185,310,327,351"/>
+<area shape="rect" title=" " alt="" coords="351,317,558,344"/>
+<area shape="rect" href="config__reader_8h.html" title=" " alt="" coords="1834,310,1987,351"/>
+<area shape="rect" title=" " alt="" coords="685,317,805,344"/>
+<area shape="rect" title=" " alt="" coords="830,317,962,344"/>
+<area shape="rect" href="ff__faults_8h.html" title=" " alt="" coords="3303,421,3431,448"/>
+<area shape="rect" href="ff__names_8h.html" title=" " alt="" coords="986,317,1121,344"/>
+<area shape="rect" title=" " alt="" coords="3556,421,3607,448"/>
+<area shape="rect" title=" " alt="" coords="1145,317,1209,344"/>
+<area shape="rect" title=" " alt="" coords="1978,421,2033,448"/>
+<area shape="rect" title=" " alt="" coords="2057,421,2127,448"/>
+<area shape="rect" title=" " alt="" coords="2151,421,2230,448"/>
+<area shape="rect" title=" " alt="" coords="2255,421,2369,448"/>
+<area shape="rect" title=" " alt="" coords="1173,518,1240,545"/>
+<area shape="rect" title=" " alt="" coords="2394,421,2465,448"/>
+<area shape="rect" title=" " alt="" coords="1384,518,1469,545"/>
+<area shape="rect" title=" " alt="" coords="1264,518,1360,545"/>
+<area shape="rect" title=" " alt="" coords="1499,518,1573,545"/>
+<area shape="rect" title=" " alt="" coords="1781,421,1843,448"/>
+<area shape="rect" title=" " alt="" coords="1867,421,1954,448"/>
+<area shape="rect" href="init_8h.html" title=" " alt="" coords="2959,421,3091,448"/>
+<area shape="rect" href="watch__files_8h.html" title=" " alt="" coords="1349,414,1502,455"/>
+<area shape="rect" title=" " alt="" coords="5237,518,5310,545"/>
+<area shape="rect" title=" " alt="" coords="5029,221,5192,247"/>
+<area shape="rect" title=" " alt="" coords="5217,221,5423,247"/>
+<area shape="rect" href="feature__counts_8h.html" title=" " alt="" coords="5447,213,5619,255"/>
+<area shape="rect" href="graph__localizer_8h.html" title=" " alt="" coords="4059,213,4221,255"/>
+<area shape="rect" href="fan__speed__mode_8h.html" title=" " alt="" coords="4519,414,4721,455"/>
+<area shape="rect" href="graph__localizer__stats_8h.html" title=" " alt="" coords="5281,310,5444,351"/>
+<area shape="rect" title=" " alt="" coords="3167,421,3227,448"/>
+<area shape="rect" href="matched__projections__measurement_8h.html" title=" " alt="" coords="4897,414,5169,455"/>
+<area shape="rect" href="graph__localizer__initializer_8h.html" title=" " alt="" coords="4296,213,4459,255"/>
+<area shape="rect" href="imu__measurement_8h.html" title=" " alt="" coords="5519,310,5721,351"/>
+<area shape="rect" href="timestamped__pose_8h.html" title=" " alt="" coords="6084,310,6287,351"/>
+<area shape="rect" href="sanity__checker_8h.html" title=" " alt="" coords="4533,213,4699,255"/>
+<area shape="rect" href="timestamped__handrail__pose_8h.html" title=" " alt="" coords="5897,213,6119,255"/>
+<area shape="rect" title=" " alt="" coords="4723,221,4955,247"/>
+<area shape="rect" href="combined__nav__state__node__updater_8h.html" title=" " alt="" coords="3175,310,3375,351"/>
+<area shape="rect" href="combined__nav__state__node__updater__params_8h.html" title=" " alt="" coords="3631,407,3820,463"/>
+<area shape="rect" href="feature__tracker_8h.html" title=" " alt="" coords="4114,310,4286,351"/>
+<area shape="rect" href="time_8h.html" title=" " alt="" coords="5707,511,5869,552"/>
+<area shape="rect" href="feature__point__node__updater_8h.html" title=" " alt="" coords="3918,310,4090,351"/>
+<area shape="rect" href="depth__odometry__factor__adder_8h.html" title=" " alt="" coords="2540,414,2732,455"/>
+<area shape="rect" href="handrail__factor__adder_8h.html" title=" " alt="" coords="2756,414,2935,455"/>
+<area shape="rect" href="graph__localizer__params_8h.html" title=" " alt="" coords="4412,310,4575,351"/>
+<area shape="rect" href="robust__smart__projection__pose__factor_8h.html" title=" " alt="" coords="2618,303,2795,359"/>
+<area shape="rect" href="loc__factor__adder_8h.html" title=" " alt="" coords="4852,310,4996,351"/>
+<area shape="rect" href="semantic__loc__factor__adder_8h.html" title=" " alt="" coords="5021,310,5206,351"/>
+<area shape="rect" href="loc__graph__action__completer_8h.html" title=" " alt="" coords="3399,310,3596,351"/>
+<area shape="rect" href="semantic__loc__graph__action__completer_8h.html" title=" " alt="" coords="3621,310,3843,351"/>
+<area shape="rect" href="averager_8h.html" title=" " alt="" coords="5193,414,5354,455"/>
+<area shape="rect" title=" " alt="" coords="6327,421,6415,448"/>
+<area shape="rect" title=" " alt="" coords="6439,421,6585,448"/>
+<area shape="rect" title=" " alt="" coords="5892,421,5959,448"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">

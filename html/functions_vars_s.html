@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -101,17 +101,33 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>sampled_traj
 : <a class="el" href="structmapper_1_1GlobalVariables.html#a2dcb103042cdd9302e187c292fb2dcb5">mapper::GlobalVariables</a>
-, <a class="el" href="structmapper_1_1MutexStruct.html#a319e6e064b929a68a21265774a3f9334">mapper::MutexStruct</a>
 </li>
 <li>sas_
 : <a class="el" href="classff__util_1_1FreeFlyerActionServer.html#a9c59c4f03d3ccb58d271c037e588e86c">ff_util::FreeFlyerActionServer&lt; ActionSpec &gt;</a>
 </li>
+<li>save_final_reprojection_image
+: <a class="el" href="structcalibration_1_1CameraTargetBasedIntrinsicsCalibratorParams.html#a160f081d02cc23882c550f5324706e3f">calibration::CameraTargetBasedIntrinsicsCalibratorParams</a>
+</li>
+<li>save_images
+: <a class="el" href="structlocalization__analysis_1_1LiveMeasurementSimulatorParams.html#a61ee679f62944fd8809817cf5cadba68">localization_analysis::LiveMeasurementSimulatorParams</a>
+</li>
+<li>save_individual_initial_reprojection_images
+: <a class="el" href="structcalibration_1_1CameraTargetBasedIntrinsicsCalibratorParams.html#a4cba4cc083be180fcaa6642b0c2b7f37">calibration::CameraTargetBasedIntrinsicsCalibratorParams</a>
+</li>
 <li>save_optical_flow_images
-: <a class="el" href="structgraph__bag_1_1GraphBagParams.html#afffaabb1dbcbcfee589481cc59754477">graph_bag::GraphBagParams</a>
-, <a class="el" href="structgraph__bag_1_1LiveMeasurementSimulatorParams.html#acd2282d8ac80fc7db2fe53e171cb18ed">graph_bag::LiveMeasurementSimulatorParams</a>
+: <a class="el" href="structlocalization__analysis_1_1GraphBagParams.html#a749451340c25cf7fe0e663e674a0b0f9">localization_analysis::GraphBagParams</a>
+</li>
+<li>save_semantic_matches_images
+: <a class="el" href="structlocalization__analysis_1_1GraphBagParams.html#adc09ca00a8984f4f18f8db38833ce292">localization_analysis::GraphBagParams</a>
 </li>
 <li>scale
 : <a class="el" href="structarm_1_1JointInfo.html#ac48e1d480cf16a2b80ba6bb60a2e2600">arm::JointInfo</a>
+</li>
+<li>scale_loss_radially
+: <a class="el" href="structcalibration_1_1CameraTargetBasedIntrinsicsCalibratorParams.html#a0840f1197cf8b2b7f6d50b278c834ba4">calibration::CameraTargetBasedIntrinsicsCalibratorParams</a>
+</li>
+<li>scale_matching_distance_with_bbox
+: <a class="el" href="structgraph__localizer_1_1SemanticLocFactorAdderParams.html#a827fa2dc050d2be63e59aa2f5deb7ceb">graph_localizer::SemanticLocFactorAdderParams</a>
 </li>
 <li>scale_noise_with_num_points
 : <a class="el" href="structgraph__localizer_1_1SmartProjectionFactorAdderParams.html#a9e53d2edfda0852f4edd7b9d2f9396b1">graph_localizer::SmartProjectionFactorAdderParams</a>
@@ -121,6 +137,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>scale_projection_noise_with_num_landmarks
 : <a class="el" href="structgraph__localizer_1_1LocFactorAdderParams.html#a94b51e2c1f53edccd8ce5ab9e9a61adc">graph_localizer::LocFactorAdderParams</a>
+, <a class="el" href="structgraph__localizer_1_1SemanticLocFactorAdderParams.html#a61c31bc786ab601eaccb3055c4656a66">graph_localizer::SemanticLocFactorAdderParams</a>
 </li>
 <li>scaleList_
 : <a class="el" href="classinterest__point_1_1BRISK__Impl.html#ad054d4c90b0cd2c9a364078eed4aad58">interest_point::BRISK_Impl</a>
@@ -136,6 +153,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>sci_cam_enable_client_
 : <a class="el" href="classexecutive_1_1Executive.html#a84f77030d6318164faaa8ab7d4299568">executive::Executive</a>
+</li>
+<li>search_radius
+: <a class="el" href="structpoint__cloud__common_1_1PointToPlaneICPParams.html#adf5f209510760e7575cb9be1b908dffd">point_cloud_common::PointToPlaneICPParams</a>
 </li>
 <li>sec
 : <a class="el" href="structsequencer_1_1sv_1_1pose__vel__accel_1_1StateVector.html#ab057c8a2ab22f9c0cfb72f37ca886c08">sequencer::sv::pose_vel_accel::StateVector</a>
@@ -158,8 +178,35 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>segs
 : <a class="el" href="structtraj__opt_1_1SplineData.html#a530649d1ec9ed4b7aea18816bfe1b015">traj_opt::SplineData</a>
 </li>
+<li>semantic_dets
+: <a class="el" href="structlocalization__measurements_1_1SemanticDetsMeasurement.html#a2b0f7176f76e3914d417229410a77107">localization_measurements::SemanticDetsMeasurement</a>
+</li>
+<li>semantic_flow_adder
+: <a class="el" href="structgraph__localizer_1_1FactorParams.html#a699190cbd86bf8c17bc2967b60f1bd35">graph_localizer::FactorParams</a>
+</li>
+<li>semantic_loc_adder
+: <a class="el" href="structgraph__localizer_1_1FactorParams.html#a14c277b6f860261e80d3cd64bd00e5c2">graph_localizer::FactorParams</a>
+</li>
+<li>semantic_map_filename
+: <a class="el" href="structgraph__localizer_1_1SemanticLocFactorAdderParams.html#a615e08a3ce6dbd53d7bd38fb7dd17178">graph_localizer::SemanticLocFactorAdderParams</a>
+</li>
+<li>semantic_object_tracker
+: <a class="el" href="structgraph__localizer_1_1GraphLocalizerParams.html#ac1feea38be6e5249b33f9582ce63d3c1">graph_localizer::GraphLocalizerParams</a>
+</li>
+<li>sensor_F_source_T_target
+: <a class="el" href="structlocalization__measurements_1_1Odometry.html#ae3e20915d5649cf96e87053a5c190b4d">localization_measurements::Odometry</a>
+</li>
 <li>sensor_id
 : <a class="el" href="structLight.html#a337edd84a0ed467469e304a639f38f2d">Light</a>
+</li>
+<li>sensor_t_line_endpoints
+: <a class="el" href="structlocalization__measurements_1_1HandrailPointsMeasurement.html#a6205c83858aaa1828c3f44718dcb9c4e">localization_measurements::HandrailPointsMeasurement</a>
+</li>
+<li>sensor_t_line_points
+: <a class="el" href="structlocalization__measurements_1_1HandrailPointsMeasurement.html#a9b2e4c7ff9e54ac52479e5da29b6fc87">localization_measurements::HandrailPointsMeasurement</a>
+</li>
+<li>sensor_t_plane_points
+: <a class="el" href="structlocalization__measurements_1_1HandrailPointsMeasurement.html#a6cd11655fc84fdb9b45535162399a0c9">localization_measurements::HandrailPointsMeasurement</a>
 </li>
 <li>sensors
 : <a class="el" href="structvive__localization_1_1Tracker.html#a27f77f6bf2a208fc9541034566d2f1d4">vive_localization::Tracker</a>
@@ -201,6 +248,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>set_
 : <a class="el" href="classoctoclass_1_1IndexedKeySet.html#a5379e1c4d711bc4b855e8283b6791a7c">octoclass::IndexedKeySet</a>
 </li>
+<li>set_collision_distance_client_
+: <a class="el" href="classexecutive_1_1Executive.html#a0b39b50a36c3978fdeac26bff5fa8349">executive::Executive</a>
+</li>
 <li>set_data_client_
 : <a class="el" href="classexecutive_1_1Executive.html#a9f6189f4f9d4ae68f83276ce93a54fbc">executive::Executive</a>
 </li>
@@ -212,6 +262,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>shortPairs_
 : <a class="el" href="classinterest__point_1_1BRISK__Impl.html#ae708fc7b24b2f0113c00c17c4fc1194d">interest_point::BRISK_Impl</a>
+</li>
+<li>show_semantic_matches_images
+: <a class="el" href="structlocalization__analysis_1_1GraphBagParams.html#abda4df7f140b836be05cdac308e5393d">localization_analysis::GraphBagParams</a>
 </li>
 <li>sigma
 : <a class="el" href="structinterest__point_1_1BRISK__Impl_1_1BriskPatternPoint.html#ab335854b74aeb392d494a39fa3fed60d">interest_point::BRISK_Impl::BriskPatternPoint</a>
@@ -241,6 +294,10 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>sliding_window_duration
 : <a class="el" href="structgraph__localizer_1_1FeatureTrackerParams.html#ab48f5b074b54eb7c0460782b788ab07b">graph_localizer::FeatureTrackerParams</a>
 </li>
+<li>sm
+: <a class="el" href="structgraph__localizer_1_1FeatureCounts.html#a656f17f4857db34f9b87140da0243c12">graph_localizer::FeatureCounts</a>
+, <a class="el" href="structlocalization__analysis_1_1LiveMeasurementSimulatorParams.html#a9773c72b6b2673eaeb7ec5493f5ac2ba">localization_analysis::LiveMeasurementSimulatorParams</a>
+</li>
 <li>small_angle
 : <a class="el" href="structsparse__mapping_1_1FilterStats.html#a05361a43513286dce4e47ffaf2ccb4a9">sparse_mapping::FilterStats</a>
 </li>
@@ -259,8 +316,27 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>solver_info
 : <a class="el" href="classtraj__opt_1_1NonlinearSolver.html#acf1a5548de69b6c2062ef11de86f1839">traj_opt::NonlinearSolver</a>
 </li>
+<li>solver_options
+: <a class="el" href="structoptimization__common_1_1OptimizationParams.html#a322aab20f1325d54f4701caae1a802a3">optimization_common::OptimizationParams</a>
+</li>
+<li>source_3d_points
+: <a class="el" href="structlocalization__measurements_1_1DepthCorrespondences.html#a189149b372730042b261b000b6948aa8">localization_measurements::DepthCorrespondences</a>
+</li>
+<li>source_image_points
+: <a class="el" href="structlocalization__measurements_1_1DepthCorrespondences.html#ae93398d1db0d9af2b3bb095851893c65">localization_measurements::DepthCorrespondences</a>
+</li>
+<li>source_point
+: <a class="el" href="structvision__common_1_1FeatureMatch.html#a28d12ffa25a5e83085b5ce6589097e15">vision_common::FeatureMatch</a>
+</li>
+<li>source_points
+: <a class="el" href="structpoint__cloud__common_1_1ICPCorrespondences.html#aad3639e02a8148ea424ce21bc1b84ee6">point_cloud_common::ICPCorrespondences</a>
+</li>
+<li>source_time
+: <a class="el" href="structdepth__odometry_1_1PoseWithCovarianceAndCorrespondences.html#a328ffca1cc8a95ec29c396d7add45745">depth_odometry::PoseWithCovarianceAndCorrespondences</a>
+, <a class="el" href="structlocalization__measurements_1_1Odometry.html#a05abd9f801d7fdeb3310f88d0ff29e0b">localization_measurements::Odometry</a>
+</li>
 <li>sparse_mapping_min_num_landmarks
-: <a class="el" href="structgraph__bag_1_1GraphBagParams.html#a8e77e5b3c88a0c0d13f270aa895be825">graph_bag::GraphBagParams</a>
+: <a class="el" href="structlocalization__analysis_1_1GraphBagParams.html#ae97415699a1ccbebb506f535963fc292">localization_analysis::GraphBagParams</a>
 </li>
 <li>speed_
 : <a class="el" href="classfam_1_1Fam.html#a173f79f70c9219c4ac13bb725de4bab1">fam::Fam</a>
@@ -336,13 +412,12 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 , <a class="el" href="unionsignal__lights_1_1LEDC__TELEMETRY__STATUS.html#a27f2f49be20e5951303da230c738b146">signal_lights::LEDC_TELEMETRY_STATUS</a>
 </li>
 <li>state_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a61299ea2aca84dd02edde92ca2c4a8f0">ekf::EkfWrapper</a>
-, <a class="el" href="classexecutive_1_1Executive.html#a28555e3293ea67b6d6b1791fcbcf892e">executive::Executive</a>
+: <a class="el" href="classexecutive_1_1Executive.html#a28555e3293ea67b6d6b1791fcbcf892e">executive::Executive</a>
 , <a class="el" href="classff__util_1_1FreeFlyerActionClient.html#acb9cf766a24a9b922acc752148e6ea00">ff_util::FreeFlyerActionClient&lt; ActionSpec &gt;</a>
 , <a class="el" href="classff__util_1_1FreeFlyerServiceClient.html#ad028df0cd2ebbf7c3204d308bec9aaa3">ff_util::FreeFlyerServiceClient&lt; ServiceSpec &gt;</a>
 </li>
-<li>state_pub_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a43077b8466c18f4224d9da113776dbdf">ekf::EkfWrapper</a>
+<li>state_response_
+: <a class="el" href="classff__util_1_1FreeFlyerActionClient.html#a9e80329b94df8b4c90b2890a7c01e664">ff_util::FreeFlyerActionClient&lt; ActionSpec &gt;</a>
 </li>
 <li>state_supplier_
 : <a class="el" href="classff_1_1RosTelemetryRapidTelemetry.html#a9384f5cd2f21cb1d9e9e7b79f10eae41">ff::RosTelemetryRapidTelemetry</a>
@@ -432,6 +507,12 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>subsystem
 : <a class="el" href="structsequencer_1_1internal_1_1CommandInfo.html#ae3fff3e7e3ea6d52508cd428d5ead062">sequencer::internal::CommandInfo</a>
 </li>
+<li>surf_feature_detector_and_matcher
+: <a class="el" href="structdepth__odometry_1_1ImageFeaturesWithKnownCorrespondencesAlignerDepthOdometryParams.html#af83cc6691cc0321105a3d2e7e547d749">depth_odometry::ImageFeaturesWithKnownCorrespondencesAlignerDepthOdometryParams</a>
+</li>
+<li>surf_threshold
+: <a class="el" href="structvision__common_1_1SurfFeatureDetectorAndMatcherParams.html#a070605d48f249e8982b56893d328d7a1">vision_common::SurfFeatureDetectorAndMatcherParams</a>
+</li>
 <li>sw_version
 : <a class="el" href="structperching__arm_1_1PerchingArm_1_1____attribute____.html#a04faa5fbb6305faf283458a17d39c8a8">perching_arm::PerchingArm::__attribute__</a>
 </li>
@@ -449,6 +530,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>sweep_time
 : <a class="el" href="structLightcapSweepData.html#a3e76bd8e9ade1df2a8fa189094aee889">LightcapSweepData</a>
+</li>
+<li>symmetric_objective
+: <a class="el" href="structpoint__cloud__common_1_1PointToPlaneICPParams.html#a94d8cef8ddd6145f9d1bce6e35be5c50">point_cloud_common::PointToPlaneICPParams</a>
 </li>
 <li>syn
 : <a class="el" href="structOOTX.html#a2dfb5ad9e8c8ea1a765a517d13f2c78e">OOTX</a>

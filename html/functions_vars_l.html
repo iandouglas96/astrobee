@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 </li>
 <li>landmark_distance_threshold
 : <a class="el" href="structgraph__localizer_1_1ProjectionFactorAdderParams.html#a802b13b1fe61819fe1f7dea4be5a013e">graph_localizer::ProjectionFactorAdderParams</a>
+, <a class="el" href="structgraph__localizer_1_1SemanticFlowFactorAdderParams.html#af355bde96f17cc44e39fcee4d4f15c41">graph_localizer::SemanticFlowFactorAdderParams</a>
 , <a class="el" href="structgraph__localizer_1_1SmartProjectionFactorAdderParams.html#a34a379b703492bb544e938d51f9bb4ec">graph_localizer::SmartProjectionFactorAdderParams</a>
 </li>
 <li>landmark_msg_
@@ -108,6 +109,7 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 </li>
 <li>landmark_point_
 : <a class="el" href="classgtsam_1_1LocProjectionFactor.html#a265dd1b2faa2b0646806976b4b631a48">gtsam::LocProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
+, <a class="el" href="classgtsam_1_1TolerantProjectionFactor.html#abb3963b296a174d0bffda7b77f235dfb">gtsam::TolerantProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
 </li>
 <li>laser_enable_client_
 : <a class="el" href="classexecutive_1_1Executive.html#a5a12242cca17fc82f6532df73d3ca32a">executive::Executive</a>
@@ -117,9 +119,6 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 </li>
 <li>last_depth_time_
 : <a class="el" href="classsim__wrapper_1_1Sim.html#a69a06df6b38dc2d910dd781cfbcede38">sim_wrapper::Sim</a>
-</li>
-<li>last_estimate_pose_
-: <a class="el" href="classekf_1_1Ekf.html#ac7b2e3beccd319efce90b1400b8d12e6">ekf::Ekf</a>
 </li>
 <li>last_landmark_nsec_
 : <a class="el" href="classgnc__autocode_1_1GncSimCSV.html#ab990d8a1a85b6b6e266ee284ca57e246">gnc_autocode::GncSimCSV</a>
@@ -188,8 +187,10 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 : <a class="el" href="classalgebra__3d_1_1FrustumPlanes.html#a885ff46d8d9b9827b04b6d1853d6da14">algebra_3d::FrustumPlanes</a>
 </li>
 <li>length
-: <a class="el" href="structis__camera_1_1buffer.html#a8c2df96baae27cba0c81bc2e5e45aba1">is_camera::buffer</a>
+: <a class="el" href="structgraph__localizer_1_1HandrailParams.html#a7e046cfcadefb95dbe35ea107395e68f">graph_localizer::HandrailParams</a>
+, <a class="el" href="structis__camera_1_1buffer.html#a8c2df96baae27cba0c81bc2e5e45aba1">is_camera::buffer</a>
 , <a class="el" href="structLight.html#a2f7f8dd812a6e6df9c8e969af6cf2b6f">Light</a>
+, <a class="el" href="structlocalization__measurements_1_1TimestampedHandrailPose.html#ab97032119c9acc12fb8240fecffaa880">localization_measurements::TimestampedHandrailPose</a>
 , <a class="el" href="structOOTX.html#a6209ba9895dfaef3414e1c46d6249668">OOTX</a>
 , <a class="el" href="structpcl_1_1detail_1_1FieldsLength.html#abe7dc1675f70c2ea18c60a1fdc03082a">pcl::detail::FieldsLength&lt; PointT &gt;</a>
 , <a class="el" href="structperching__arm_1_1PerchingArm_1_1____attribute____.html#a4d4204799a175a7b44512d744d639296">perching_arm::PerchingArm::__attribute__</a>
@@ -239,15 +240,15 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 <li>live_led_on_
 : <a class="el" href="classexecutive_1_1Executive.html#aafa13bee9a694cf40205acbad6a98d52">executive::Executive</a>
 </li>
+<li>lk_optical_flow_feature_detector_and_matcher
+: <a class="el" href="structdepth__odometry_1_1ImageFeaturesWithKnownCorrespondencesAlignerDepthOdometryParams.html#a173b094550c19c026054c77bbeda88a0">depth_odometry::ImageFeaturesWithKnownCorrespondencesAlignerDepthOdometryParams</a>
+</li>
 <li>load
 : <a class="el" href="structperching__arm_1_1PerchingArmRaw_1_1PerchingArmRawGripper.html#a267366d45640435bc24f0aabf30dadb0">perching_arm::PerchingArmRaw::PerchingArmRawGripper</a>
 , <a class="el" href="structperching__arm_1_1PerchingArmRaw_1_1PerchingArmRawJoint.html#ada7e791ae2de7c050d2e6ca571a2d99c">perching_arm::PerchingArmRaw::PerchingArmRawJoint</a>
 </li>
 <li>load_service_
 : <a class="el" href="classsys__monitor_1_1SysMonitor.html#a62508ecd26de834a25fb240cdb389e6f">sys_monitor::SysMonitor</a>
-</li>
-<li>loc_
-: <a class="el" href="classekf__bag_1_1EkfBag.html#ad53b5b859cf590b4e641859542b6f62d">ekf_bag::EkfBag</a>
 </li>
 <li>loc_adder
 : <a class="el" href="structgraph__localizer_1_1FactorParams.html#a5bb782fa2f38af5a4e6287ee8a35f403">graph_localizer::FactorParams</a>
@@ -279,14 +280,23 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 <li>log_error_timer_
 : <a class="el" href="classgraph__optimizer_1_1GraphStats.html#a648bff875bc860a77dccdd37485a1284">graph_optimizer::GraphStats</a>
 </li>
+<li>log_on_destruction
+: <a class="el" href="structgraph__optimizer_1_1GraphOptimizerParams.html#ac72b98d0a8a792705283d373af64afc4">graph_optimizer::GraphOptimizerParams</a>
+</li>
 <li>log_rate
 : <a class="el" href="structgraph__optimizer_1_1GraphOptimizerParams.html#aaef6bcdec70e4be267eb07eeaf04f86c">graph_optimizer::GraphOptimizerParams</a>
 </li>
 <li>log_relative_time
-: <a class="el" href="structgraph__bag_1_1GraphBagParams.html#a3c4c64669a446dba22c55181c6954286">graph_bag::GraphBagParams</a>
+: <a class="el" href="structlocalization__analysis_1_1GraphBagParams.html#a768409b88877716a9a20bc6ebcec3c5a">localization_analysis::GraphBagParams</a>
 </li>
 <li>log_stats_timer_
 : <a class="el" href="classgraph__optimizer_1_1GraphStats.html#aface8af948dcda4df3f50dc3fc72d11c">graph_optimizer::GraphStats</a>
+</li>
+<li>log_time_hlp_
+: <a class="el" href="classsys__monitor_1_1SysMonitor.html#a39b8776825b82d0603f33e66bbbe9a0d">sys_monitor::SysMonitor</a>
+</li>
+<li>log_time_llp_
+: <a class="el" href="classsys__monitor_1_1SysMonitor.html#a5acdd8f49c0fc9e1ee36272c606430f1">sys_monitor::SysMonitor</a>
 </li>
 <li>longPairs_
 : <a class="el" href="classinterest__point_1_1BRISK__Impl.html#a0a7fff4ab44e0025c9352e6453aef419">interest_point::BRISK_Impl</a>

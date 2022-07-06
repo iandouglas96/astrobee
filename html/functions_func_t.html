@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -130,6 +130,9 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 <li>TempTRCallback()
 : <a class="el" href="classff_1_1RosBatteryStateToRapid.html#a54c0bf24cb395420e715f185e32e246d">ff::RosBatteryStateToRapid</a>
 </li>
+<li>testPoint()
+: <a class="el" href="classpcl_1_1search_1_1OrganizedNeighbor2.html#aa5f57056488437850e22a061454821b6">pcl::search::OrganizedNeighbor2&lt; PointT &gt;</a>
+</li>
 <li>ThermalZone()
 : <a class="el" href="classcpu__mem__monitor_1_1ThermalZone.html#af95195eafa88b4e2aeb5f4f51f0d1a52">cpu_mem_monitor::ThermalZone</a>
 </li>
@@ -147,6 +150,7 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 </li>
 <li>throwCheirality()
 : <a class="el" href="classgtsam_1_1LocProjectionFactor.html#a107b549ec441d4ab7df828e8aa549da6">gtsam::LocProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
+, <a class="el" href="classgtsam_1_1TolerantProjectionFactor.html#ab96ebbdd55ca4ee99aa3f925b77f4025">gtsam::TolerantProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
 </li>
 <li>tic()
 : <a class="el" href="classtraj__opt_1_1Timer.html#ac03c6ab8fdd007b6e021c024eeb6e413">traj_opt::Timer</a>
@@ -154,14 +158,11 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 <li>Tick()
 : <a class="el" href="classff__util_1_1PerfTimer.html#a3990f6ef59e498057ee366c12d18226f">ff_util::PerfTimer</a>
 </li>
-<li>Tilt()
-: <a class="el" href="classarm__sim_1_1ArmSim.html#a033edcd1461363a5c65be5f8f2de51cd">arm_sim::ArmSim</a>
-</li>
 <li>tilt()
 : <a class="el" href="classjsonloader_1_1ArmPanAndTiltCommand.html#ad2dbaed1eb93e518a3036a008ce047f1">jsonloader::ArmPanAndTiltCommand</a>
 </li>
 <li>Time()
-: <a class="el" href="classjsonloader_1_1Time.html#a2e07908963dc1f7a1da5cf5dec80c24c">jsonloader::Time</a>
+: <a class="el" href="classjsonloader_1_1Time.html#a32c27bac6aaf15bd1cadcb3aa8ea6eec">jsonloader::Time</a>
 </li>
 <li>time()
 : <a class="el" href="classjsonloader_1_1Waypoint.html#a135c4fa6847a84d8b52b928b924c634b">jsonloader::Waypoint</a>
@@ -205,6 +206,22 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 , <a class="el" href="classgraph__optimizer_1_1KeyInfo.html#aebcdad3b6d2ee2704779c73bd1b6bd2d">graph_optimizer::KeyInfo</a>
 , <a class="el" href="classlocalization__common_1_1CombinedNavState.html#af155c6d8b11acd10f6b2be56fd7bfb86">localization_common::CombinedNavState</a>
 </li>
+<li>TimestampedHandrailPose()
+: <a class="el" href="structlocalization__measurements_1_1TimestampedHandrailPose.html#a035674e483707641aec179e27d354192">localization_measurements::TimestampedHandrailPose</a>
+</li>
+<li>TimestampedPose()
+: <a class="el" href="structlocalization__measurements_1_1TimestampedPose.html#a836e93538336cddc162258a8cac2e0c2">localization_measurements::TimestampedPose</a>
+</li>
+<li>TimestampedSet()
+: <a class="el" href="classlocalization__common_1_1TimestampedSet.html#a3a504d7c14aa0e69785bb4dea8e4f0fc">localization_common::TimestampedSet&lt; T &gt;</a>
+</li>
+<li>TimestampedValue()
+: <a class="el" href="structlocalization__common_1_1TimestampedValue.html#a5de330651aae4d289981def0340416ce">localization_common::TimestampedValue&lt; T &gt;</a>
+</li>
+<li>Timestamps()
+: <a class="el" href="classgraph__localizer_1_1CombinedNavStateGraphValues.html#a78292a4b6169f4152b8f3dd9432b4854">graph_localizer::CombinedNavStateGraphValues</a>
+, <a class="el" href="classlocalization__common_1_1TimestampedSet.html#a403139a8f1bfc387d71312f3acd14b65">localization_common::TimestampedSet&lt; T &gt;</a>
+</li>
 <li>toc()
 : <a class="el" href="classtraj__opt_1_1Timer.html#a733245a39a6bf0ee62c8d1c50d0cc746">traj_opt::Timer</a>
 </li>
@@ -215,15 +232,13 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 : <a class="el" href="structlocalization__manager_1_1Pipeline.html#a52e79f66b97fc5f9c9b57dba8e67da94">localization_manager::Pipeline</a>
 </li>
 <li>ToggleCallback()
-: <a class="el" href="classgazebo_1_1GazeboModelPluginFlashlightAft.html#a0eecd277abf2ec81225534dc627c8027">gazebo::GazeboModelPluginFlashlightAft</a>
-, <a class="el" href="classgazebo_1_1GazeboModelPluginFlashlightFront.html#a6fabd0df187a3ca79f56b1bf3f3be883">gazebo::GazeboModelPluginFlashlightFront</a>
+: <a class="el" href="classgazebo_1_1GazeboModelPluginFlashlight.html#ac523a7b32af63044266b2e6565cf9062">gazebo::GazeboModelPluginFlashlight</a>
 , <a class="el" href="classgazebo_1_1GazeboModelPluginLaser.html#a5f10ba9e1dfafc11e605e41ff492ec0b">gazebo::GazeboModelPluginLaser</a>
 , <a class="el" href="classgazebo_1_1GazeboSensorPluginDockCam.html#a91fb5242dc993069feed9786209ed603">gazebo::GazeboSensorPluginDockCam</a>
 , <a class="el" href="classgazebo_1_1GazeboSensorPluginHazCam.html#a305bbcd476d11c93b8a14f2d75e9e317">gazebo::GazeboSensorPluginHazCam</a>
 , <a class="el" href="classgazebo_1_1GazeboSensorPluginImu.html#a44fe591b4a7291e579d23211361bbb38">gazebo::GazeboSensorPluginImu</a>
 , <a class="el" href="classgazebo_1_1GazeboSensorPluginNavCam.html#a1baf07fbc1ba08d686e882afa8b2174a">gazebo::GazeboSensorPluginNavCam</a>
 , <a class="el" href="classgazebo_1_1GazeboSensorPluginPerchCam.html#a9e53784c80d0a688ac02588283cd0e7f">gazebo::GazeboSensorPluginPerchCam</a>
-, <a class="el" href="classgazebo_1_1GazeboSensorPluginSciCam.html#ae0dec9245246d8e3084c3116ce3d37fa">gazebo::GazeboSensorPluginSciCam</a>
 </li>
 <li>ToggleCamera()
 : <a class="el" href="classpico__driver_1_1PicoDriverL1.html#a36e710fcc6a98180f25d33416becced9">pico_driver::PicoDriverL1</a>
@@ -235,6 +250,9 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 <li>tolerance()
 : <a class="el" href="classjsonloader_1_1Segment.html#af37cdc555718791ec2cc6fe22b76e170">jsonloader::Segment</a>
 , <a class="el" href="classjsonloader_1_1Station.html#ab77a88ea830edc0602ac034541a86b5b">jsonloader::Station</a>
+</li>
+<li>TolerantProjectionFactor()
+: <a class="el" href="classgtsam_1_1TolerantProjectionFactor.html#a60863f8aad0fcf08f62b2edb34455e38">gtsam::TolerantProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
 </li>
 <li>TooFew()
 : <a class="el" href="classinterest__point_1_1BriskDynamicDetector.html#a59aa9d799e00d7a164ce04dd9c0b22fd">interest_point::BriskDynamicDetector</a>
@@ -252,23 +270,20 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 <li>ToSetpoint()
 : <a class="el" href="classff__util_1_1State.html#aacaf8449cae1e396bb140427ca7f2632">ff_util::State</a>
 </li>
-<li>TrackedOFFeatures()
-: <a class="el" href="classekf__bag_1_1TrackedOFFeatures.html#a4d2b6075337e5ea3ec9da8a84ba8c0d5">ekf_bag::TrackedOFFeatures</a>
-</li>
-<li>TrackedSMFeatures()
-: <a class="el" href="classekf__bag_1_1TrackedSMFeatures.html#afa540647fc50b76d62717338a2fe96b1">ekf_bag::TrackedSMFeatures</a>
-</li>
 <li>TrackerCallback()
 : <a class="el" href="classvive_1_1ViveNodelet.html#a6191b065c8ba13558a2df063dcbd6620">vive::ViveNodelet</a>
 </li>
+<li>Tracks()
+: <a class="el" href="classgraph__localizer_1_1SemanticObjectTracker.html#a60002da40ef91f67bd979a009f955965">graph_localizer::SemanticObjectTracker</a>
+</li>
 <li>TrajData()
-: <a class="el" href="structtraj__opt_1_1TrajData.html#a6339046611cbbb23d712e692c35938cd">traj_opt::TrajData</a>
+: <a class="el" href="structtraj__opt_1_1TrajData.html#a5ce948c0e6a00cea24f86b320d16f6f3">traj_opt::TrajData</a>
 </li>
 <li>Trajectory3D()
 : <a class="el" href="classpolynomials_1_1Trajectory3D.html#aefcbd43677f2f463be2cea7ced51cf3d">polynomials::Trajectory3D</a>
 </li>
 <li>TrajectoryAtTime()
-: <a class="el" href="classpolynomials_1_1Trajectory3D.html#a12de2f72ef3eb0239094620daef71dbc">polynomials::Trajectory3D</a>
+: <a class="el" href="classpolynomials_1_1Trajectory3D.html#a25fdc859a929dfa907d114e15a6445c2">polynomials::Trajectory3D</a>
 </li>
 <li>TrajectoryDisplay()
 : <a class="el" href="classtraj__opt_1_1TrajectoryDisplay.html#adec5d21365206b23ac4fdf65fa61b49a">traj_opt::TrajectoryDisplay</a>
@@ -293,6 +308,9 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 </li>
 <li>TransferWord()
 : <a class="el" href="classepson__imu_1_1G362P.html#a7254e101fa0fa7dd493990b8687b65d4">epson_imu::G362P</a>
+</li>
+<li>TransformationEstimationSymmetricPointToPlaneLLS2()
+: <a class="el" href="classpcl_1_1registration_1_1TransformationEstimationSymmetricPointToPlaneLLS2.html#abe7a727a3f2cbd6d5b940c04b3a076ff">pcl::registration::TransformationEstimationSymmetricPointToPlaneLLS2&lt; PointSource, PointTarget, Scalar &gt;</a>
 </li>
 <li>TransformFrustum()
 : <a class="el" href="classalgebra__3d_1_1FrustumPlanes.html#aceae7ff09858b7da2c4ab6df15ec2900">algebra_3d::FrustumPlanes</a>
@@ -326,6 +344,7 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 , <a class="el" href="classgraph__localizer_1_1FeaturePointNodeUpdater.html#a13eaf7b934296c79e6e2424b6b9f03c6">graph_localizer::FeaturePointNodeUpdater</a>
 , <a class="el" href="classgraph__localizer_1_1LocGraphActionCompleter.html#a8fb2dcd25f6ee32a5b0a134c29ed617f">graph_localizer::LocGraphActionCompleter</a>
 , <a class="el" href="classgraph__localizer_1_1ProjectionGraphActionCompleter.html#ae846218f946e402f8477bd52b13851fa">graph_localizer::ProjectionGraphActionCompleter</a>
+, <a class="el" href="classgraph__localizer_1_1SemanticLocGraphActionCompleter.html#abdf12e3a97ad2141ea8338837c2c9080">graph_localizer::SemanticLocGraphActionCompleter</a>
 , <a class="el" href="classgraph__localizer_1_1SmartProjectionGraphActionCompleter.html#a014481d35171f3783afa4177c0e94536">graph_localizer::SmartProjectionGraphActionCompleter</a>
 , <a class="el" href="classgraph__optimizer_1_1GraphActionCompleter.html#a9853371a91aefbc2012b19d12e2e389c">graph_optimizer::GraphActionCompleter</a>
 , <a class="el" href="classgraph__optimizer_1_1NodeUpdater.html#adbd53192bb81cdd9f7e88292ba5bd8a6">graph_optimizer::NodeUpdater</a>

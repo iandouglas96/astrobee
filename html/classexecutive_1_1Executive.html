@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -103,9 +103,9 @@ Inheritance diagram for executive::Executive:</div>
 <div class="dyncontent">
 <div class="center"><img src="classexecutive_1_1Executive__inherit__graph.png" border="0" usemap="#aexecutive_1_1Executive_inherit__map" alt="Inheritance graph"/></div>
 <map name="executive_1_1Executive_inherit__map" id="aexecutive_1_1Executive_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,520,264,1067"/>
+<area shape="rect" title=" " alt="" coords="5,520,264,1081"/>
 <area shape="rect" href="classff__util_1_1FreeFlyerNodelet.html" title=" " alt="" coords="46,131,223,472"/>
-<area shape="rect" title=" " alt="" coords="98,5,171,83"/>
+<area shape="rect" title=" " alt="" coords="69,5,200,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -207,18 +207,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e0b0020fb3dcaf298ab8f70629bd4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7de50be707cc1e638b669ba063f87e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#ac7de50be707cc1e638b669ba063f87e1">ArmControl</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:ac7de50be707cc1e638b669ba063f87e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d5bdbd35b54b67482be4259e1636216"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a9d5bdbd35b54b67482be4259e1636216">CheckNotMoving</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
-<tr class="separator:a9d5bdbd35b54b67482be4259e1636216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb7cff3ac680631fa13a590fa788117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a4bb7cff3ac680631fa13a590fa788117">CheckServiceExists</a> (ros::ServiceClient &amp;serviceIn, std::string const &amp;serviceName, std::string const &amp;cmd_in)</td></tr>
 <tr class="separator:a4bb7cff3ac680631fa13a590fa788117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47574adf869e222d9d132000ad925786"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a47574adf869e222d9d132000ad925786">CheckStoppedOrDrifting</a> (std::string const &amp;cmd_id, std::string const &amp;cmd_name)</td></tr>
 <tr class="separator:a47574adf869e222d9d132000ad925786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba7ab2440db308a5c5bf5a73e9f5ce6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a0ba7ab2440db308a5c5bf5a73e9f5ce6">ConfigureLed</a> (ff_hw_msgs::ConfigureSystemLeds &amp;led_srv)</td></tr>
 <tr class="separator:a0ba7ab2440db308a5c5bf5a73e9f5ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af665804a5f0c9f448a1077c0870cd427"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#af665804a5f0c9f448a1077c0870cd427">ConfigureMobility</a> (std::string const &amp;cmd_id)</td></tr>
-<tr class="separator:af665804a5f0c9f448a1077c0870cd427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6ef809e9f8aeffb7af572462794c9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a7b6ef809e9f8aeffb7af572462794c9f">ConfigureMobility</a> (bool move_to_start, std::string &amp;err_msg)</td></tr>
 <tr class="separator:a7b6ef809e9f8aeffb7af572462794c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e6628974c6d3be2943c955ba04629f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a03e6628974c6d3be2943c955ba04629f">FailCommandIfMoving</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
+<tr class="separator:a03e6628974c6d3be2943c955ba04629f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9147f32506c93434fb09462973e0d717"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a9147f32506c93434fb09462973e0d717">LoadUnloadNodelet</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
+<tr class="separator:a9147f32506c93434fb09462973e0d717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ea8151d1904ce7ad2fef26ea74ada2"><td class="memItemLeft" align="right" valign="top">ros::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a54ea8151d1904ce7ad2fef26ea74ada2">MsToSec</a> (std::string timestamp)</td></tr>
 <tr class="separator:a54ea8151d1904ce7ad2fef26ea74ada2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce8e1efbdbd0a27187d265481f77499"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a7ce8e1efbdbd0a27187d265481f77499">PowerItem</a> (ff_msgs::CommandStampedPtr const &amp;cmd, bool on)</td></tr>
@@ -245,6 +245,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49184a20834a1b42bdf2726a1aaa54f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93045a65ef72c6462c37aadccfbd621c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a93045a65ef72c6462c37aadccfbd621c">CustomGuestScience</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:a93045a65ef72c6462c37aadccfbd621c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7c12183405e7735c0a628907662791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a3c7c12183405e7735c0a628907662791">DeployArm</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
+<tr class="separator:a3c7c12183405e7735c0a628907662791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab61018658ab41bfaf399c89bfc8caafa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#ab61018658ab41bfaf399c89bfc8caafa">Dock</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:ab61018658ab41bfaf399c89bfc8caafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a898f074a864a15bb6a9c10dcf707c5c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a898f074a864a15bb6a9c10dcf707c5c8">Fault</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
@@ -255,6 +257,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a340967fa7519d3b51a3fef6a7fb0912f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225f83d9324e4d8970b8b75462b7f507"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a225f83d9324e4d8970b8b75462b7f507">InitializeBias</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:a225f83d9324e4d8970b8b75462b7f507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c38f78086b58c6f95599b72613b7f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#ad9c38f78086b58c6f95599b72613b7f3">LoadNodelet</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
+<tr class="separator:ad9c38f78086b58c6f95599b72613b7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c944241f30af4bb5dee3ec19b1c6d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#af1c944241f30af4bb5dee3ec19b1c6d9">NoOp</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:af1c944241f30af4bb5dee3ec19b1c6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed92d286d821588659231ba3dda81162"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#aed92d286d821588659231ba3dda81162">PausePlan</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
@@ -327,6 +331,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9af40e24092eee4720c7c1a2ba2397cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf5b60e2917b429dee604760acf7d7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#aedf5b60e2917b429dee604760acf7d7c">Undock</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:aedf5b60e2917b429dee604760acf7d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757608990cd6b6687f80d4e4265698c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a757608990cd6b6687f80d4e4265698c3">UnloadNodelet</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
+<tr class="separator:a757608990cd6b6687f80d4e4265698c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972b1063ef3dc9d6b2c2538f96d123d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a972b1063ef3dc9d6b2c2538f96d123d7">Unperch</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
 <tr class="separator:a972b1063ef3dc9d6b2c2538f96d123d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5990ec26c02791b61bb47405b2866d2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a5990ec26c02791b61bb47405b2866d2e">Unterminate</a> (ff_msgs::CommandStampedPtr const &amp;cmd)</td></tr>
@@ -365,6 +371,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a64fcda041630010f531fd39b53a26f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe30959f0bbc44284c3cb9808e47aeaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#abe30959f0bbc44284c3cb9808e47aeaa">ReadParams</a> ()</td></tr>
 <tr class="separator:abe30959f0bbc44284c3cb9808e47aeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2f46017614f36004b41143448cebc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#abd2f46017614f36004b41143448cebc2">ReadMapperParams</a> ()</td></tr>
+<tr class="separator:abd2f46017614f36004b41143448cebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b33c3702be4b4e0e852fa34b599cde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a23b33c3702be4b4e0e852fa34b599cde">ReadCommand</a> (<a class="el" href="classconfig__reader_1_1ConfigReader_1_1Table.html">config_reader::ConfigReader::Table</a> *response, ff_msgs::CommandStampedPtr cmd)</td></tr>
 <tr class="separator:a23b33c3702be4b4e0e852fa34b599cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366ce609a2c982d580220c0b513be6d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a366ce609a2c982d580220c0b513be6d7">PublishAgentState</a> ()</td></tr>
@@ -380,8 +388,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a7089eceb2b3bd66fb091b37693388e24 inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe589d3b48ecc862af9dfaf193d2342f inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classff__util_1_1FreeFlyerNodelet.html#afe589d3b48ecc862af9dfaf193d2342f">SendDiagnostics</a> (const std::vector&lt; diagnostic_msgs::KeyValue &gt; &amp;keyval)</td></tr>
 <tr class="separator:afe589d3b48ecc862af9dfaf193d2342f inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c14890099697bcbfc10a898ba0696f0 inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classff__util_1_1FreeFlyerNodelet.html#a8c14890099697bcbfc10a898ba0696f0">Setup</a> (ros::NodeHandle &amp;nh, ros::NodeHandle &amp;nh_mt)</td></tr>
-<tr class="separator:a8c14890099697bcbfc10a898ba0696f0 inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154b075b18405f40a4834c01a386a5c8 inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classff__util_1_1FreeFlyerNodelet.html#a154b075b18405f40a4834c01a386a5c8">Setup</a> (ros::NodeHandle &amp;nh, ros::NodeHandle &amp;nh_mt, std::string plugin_name)</td></tr>
+<tr class="separator:a154b075b18405f40a4834c01a386a5c8 inherit pro_methods_classff__util_1_1FreeFlyerNodelet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -399,6 +407,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7db046cc0586e56b5746bbfcfdfc39f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade55600baaf1c63fea8a98a7832b4bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classconfig__reader_1_1ConfigReader.html">config_reader::ConfigReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#ade55600baaf1c63fea8a98a7832b4bf4">config_params_</a></td></tr>
 <tr class="separator:ade55600baaf1c63fea8a98a7832b4bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade608b1fd787ebdc1daba8bdfe582d50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classconfig__reader_1_1ConfigReader.html">config_reader::ConfigReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#ade608b1fd787ebdc1daba8bdfe582d50">mapper_config_params_</a></td></tr>
+<tr class="separator:ade608b1fd787ebdc1daba8bdfe582d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed820355b774209b22cd377f1d7417c8"><td class="memItemLeft" align="right" valign="top">ff_msgs::AgentStateStamped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#aed820355b774209b22cd377f1d7417c8">agent_state_</a></td></tr>
 <tr class="separator:aed820355b774209b22cd377f1d7417c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e820a67f6b0616da14625c1b25e0ad0"><td class="memItemLeft" align="right" valign="top">ff_msgs::AckStamped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a0e820a67f6b0616da14625c1b25e0ad0">ack_</a></td></tr>
@@ -497,6 +507,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:abc1b8610c750f445e908a5e345957476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe75dfd76b71b1b708267c5d73982f9"><td class="memItemLeft" align="right" valign="top">ros::ServiceClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#affe75dfd76b71b1b708267c5d73982f9">eps_terminate_client_</a></td></tr>
 <tr class="separator:affe75dfd76b71b1b708267c5d73982f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abdd945bb16caa1b6792acb442abbcf"><td class="memItemLeft" align="right" valign="top">ros::ServiceClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a2abdd945bb16caa1b6792acb442abbcf">unload_load_nodelet_client_</a></td></tr>
+<tr class="separator:a2abdd945bb16caa1b6792acb442abbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b39b50a36c3978fdeac26bff5fa8349"><td class="memItemLeft" align="right" valign="top">ros::ServiceClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#a0b39b50a36c3978fdeac26bff5fa8349">set_collision_distance_client_</a></td></tr>
+<tr class="separator:a0b39b50a36c3978fdeac26bff5fa8349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a20bbb6d4609974e8f6ef51518772d"><td class="memItemLeft" align="right" valign="top">ros::Subscriber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#ae2a20bbb6d4609974e8f6ef51518772d">cmd_sub_</a></td></tr>
 <tr class="separator:ae2a20bbb6d4609974e8f6ef51518772d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeefc0c01b729cdcb029a146cd68bab0a"><td class="memItemLeft" align="right" valign="top">ros::Subscriber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutive_1_1Executive.html#aeefc0c01b729cdcb029a146cd68bab0a">dock_state_sub_</a></td></tr>
@@ -838,24 +852,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9d5bdbd35b54b67482be4259e1636216"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d5bdbd35b54b67482be4259e1636216">&#9670;&nbsp;</a></span>CheckNotMoving()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool executive::Executive::CheckNotMoving </td>
-          <td>(</td>
-          <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4bb7cff3ac680631fa13a590fa788117"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bb7cff3ac680631fa13a590fa788117">&#9670;&nbsp;</a></span>CheckServiceExists()</h2>
 
@@ -955,7 +951,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a7b6ef809e9f8aeffb7af572462794c9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b6ef809e9f8aeffb7af572462794c9f">&#9670;&nbsp;</a></span>ConfigureMobility() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6ef809e9f8aeffb7af572462794c9f">&#9670;&nbsp;</a></span>ConfigureMobility()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -976,24 +972,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af665804a5f0c9f448a1077c0870cd427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af665804a5f0c9f448a1077c0870cd427">&#9670;&nbsp;</a></span>ConfigureMobility() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool executive::Executive::ConfigureMobility </td>
-          <td>(</td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>cmd_id</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1029,6 +1007,24 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">ff_msgs::CompressedFileConstPtr const &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c7c12183405e7735c0a628907662791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7c12183405e7735c0a628907662791">&#9670;&nbsp;</a></span>DeployArm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool executive::Executive::DeployArm </td>
+          <td>(</td>
+          <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1093,6 +1089,24 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">ff_msgs::DockStateConstPtr const &amp;&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03e6628974c6d3be2943c955ba04629f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e6628974c6d3be2943c955ba04629f">&#9670;&nbsp;</a></span>FailCommandIfMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool executive::Executive::FailCommandIfMoving </td>
+          <td>(</td>
+          <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1555,6 +1569,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9c38f78086b58c6f95599b72613b7f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c38f78086b58c6f95599b72613b7f3">&#9670;&nbsp;</a></span>LoadNodelet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool executive::Executive::LoadNodelet </td>
+          <td>(</td>
+          <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9147f32506c93434fb09462973e0d717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9147f32506c93434fb09462973e0d717">&#9670;&nbsp;</a></span>LoadUnloadNodelet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool executive::Executive::LoadUnloadNodelet </td>
+          <td>(</td>
+          <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9f8a983f7f1de7e1d2175df9c4c9fb2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f8a983f7f1de7e1d2175df9c4c9fb2a">&#9670;&nbsp;</a></span>LocalizationResultCallback()</h2>
 
@@ -2008,6 +2058,31 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd2f46017614f36004b41143448cebc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2f46017614f36004b41143448cebc2">&#9670;&nbsp;</a></span>ReadMapperParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool executive::Executive::ReadMapperParams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -2791,6 +2866,24 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool executive::Executive::Undock </td>
+          <td>(</td>
+          <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a757608990cd6b6687f80d4e4265698c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757608990cd6b6687f80d4e4265698c3">&#9670;&nbsp;</a></span>UnloadNodelet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool executive::Executive::UnloadNodelet </td>
           <td>(</td>
           <td class="paramtype">ff_msgs::CommandStampedPtr const &amp;&#160;</td>
           <td class="paramname"><em>cmd</em></td><td>)</td>
@@ -4080,6 +4173,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ade608b1fd787ebdc1daba8bdfe582d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade608b1fd787ebdc1daba8bdfe582d50">&#9670;&nbsp;</a></span>mapper_config_params_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classconfig__reader_1_1ConfigReader.html">config_reader::ConfigReader</a> executive::Executive::mapper_config_params_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7f389717cb8374f4fc93a374a671360a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f389717cb8374f4fc93a374a671360a">&#9670;&nbsp;</a></span>motion_ac_</h2>
 
@@ -4718,6 +4833,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a0b39b50a36c3978fdeac26bff5fa8349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b39b50a36c3978fdeac26bff5fa8349">&#9670;&nbsp;</a></span>set_collision_distance_client_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::ServiceClient executive::Executive::set_collision_distance_client_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9f6189f4f9d4ae68f83276ce93a54fbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f6189f4f9d4ae68f83276ce93a54fbc">&#9670;&nbsp;</a></span>set_data_client_</h2>
 
@@ -5037,6 +5174,28 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">ros::Timer executive::Executive::sys_monitor_startup_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2abdd945bb16caa1b6792acb442abbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2abdd945bb16caa1b6792acb442abbcf">&#9670;&nbsp;</a></span>unload_load_nodelet_client_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::ServiceClient executive::Executive::unload_load_nodelet_client_</td>
         </tr>
       </table>
   </td>

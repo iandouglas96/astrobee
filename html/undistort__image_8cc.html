@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -149,20 +149,24 @@ Include dependency graph for undistort_image.cc:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af194c2592b013704f855ddb469c9a2f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#af194c2592b013704f855ddb469c9a2f6">DEFINE_string</a> (image_list, &quot;&quot;, &quot;The list of images to undistort, one per line. If not specified, &quot; &quot;it is assumed they are passed in directly on the command line.&quot;)</td></tr>
-<tr class="separator:af194c2592b013704f855ddb469c9a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab572f5128add3e53f49ea7749546fc92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#ab572f5128add3e53f49ea7749546fc92">DEFINE_string</a> (output_directory, &quot;&quot;, &quot;If not specified, undistorted images will &quot; &quot;saved in the same directory as the inputs.&quot;)</td></tr>
-<tr class="separator:ab572f5128add3e53f49ea7749546fc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a3a8aed4236cb1a52f65c72054a758"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#af1a3a8aed4236cb1a52f65c72054a758">DEFINE_string</a> (image_list, &quot;&quot;, &quot;A file having the list of images to undistort, one per line. &quot; &quot;If not specified, it is assumed they are passed in directly on the command line.&quot;)</td></tr>
+<tr class="separator:af1a3a8aed4236cb1a52f65c72054a758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fef1ba351fd2b21bae77cef5e6d21c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a1fef1ba351fd2b21bae77cef5e6d21c7">DEFINE_string</a> (output_directory, &quot;&quot;, &quot;Output directory. If not specified, undistorted images will &quot; &quot;saved in the same directory as the inputs.&quot;)</td></tr>
+<tr class="separator:a1fef1ba351fd2b21bae77cef5e6d21c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8ea8275e6df43b64eedfb0b958b71c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#abd8ea8275e6df43b64eedfb0b958b71c">DEFINE_string</a> (output_list, &quot;&quot;, &quot;Save the undistorted images with names given in this list, &quot; &quot;instead of using the output directory.&quot;)</td></tr>
+<tr class="separator:abd8ea8275e6df43b64eedfb0b958b71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fb8225e247cebdd66e39ef15b3643a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#ab1fb8225e247cebdd66e39ef15b3643a">DEFINE_string</a> (undistorted_intrinsics, &quot;&quot;, &quot;Save to this file the undistorted camera intrinsics.&quot;)</td></tr>
+<tr class="separator:ab1fb8225e247cebdd66e39ef15b3643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f84ba42a65db1cae57299ef802cba5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a4f84ba42a65db1cae57299ef802cba5c">DEFINE_double</a> (scale, 1.0, &quot;Undistort images at different resolution, with their width &quot; &quot;being a multiple of this scale compared to the camera model.&quot;)</td></tr>
 <tr class="separator:a4f84ba42a65db1cae57299ef802cba5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9c856ed7a559be6c84e41f9ce91094"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a1a9c856ed7a559be6c84e41f9ce91094">DEFINE_string</a> (undistorted_crop_win, &quot;&quot;, &quot;After undistorting, apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be displayed below. &quot; &quot;Specify as: 'crop_x crop_y'.&quot;)</td></tr>
-<tr class="separator:a1a9c856ed7a559be6c84e41f9ce91094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4bf237bdf3a31b9756c14d50659857"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#afe4bf237bdf3a31b9756c14d50659857">DEFINE_string</a> (undistorted_crop_win, &quot;&quot;, &quot;After undistorting, apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be printed on screen. &quot; &quot;Specify as: 'crop_x crop_y'.&quot;)</td></tr>
+<tr class="separator:afe4bf237bdf3a31b9756c14d50659857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d25577d3f4a0e48365827cb5295926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#aa4d25577d3f4a0e48365827cb5295926">DEFINE_bool</a> (save_bgr, false, &quot;Save the undistorted images as BGR instead of grayscale. (Some tools expect BGR.)&quot;)</td></tr>
 <tr class="separator:aa4d25577d3f4a0e48365827cb5295926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddf5e8c900ecb606b055a6ff0b23521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a5ddf5e8c900ecb606b055a6ff0b23521">DEFINE_bool</a> (<a class="el" href="interest__points__test__bag_8cc.html#a48f829c48f848ca0e196d73da88d99c2">histogram_equalization</a>, false, &quot;If true, do histogram equalization.&quot;)</td></tr>
 <tr class="separator:a5ddf5e8c900ecb606b055a6ff0b23521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f24a142045bec11101747725421347e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a7f24a142045bec11101747725421347e">DEFINE_string</a> (robot_camera, &quot;nav_cam&quot;, &quot;Which of bot's cameras to use. Anything except nav_cam is experimental.&quot;)</td></tr>
-<tr class="separator:a7f24a142045bec11101747725421347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c783c120e8fe2aeb66392b746211df4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a9c783c120e8fe2aeb66392b746211df4">DEFINE_string</a> (robot_camera, &quot;nav_cam&quot;, &quot;Which of bot's cameras to use. Tested with nav_cam and sci_cam.&quot;)</td></tr>
+<tr class="separator:a9c783c120e8fe2aeb66392b746211df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -281,8 +285,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af194c2592b013704f855ddb469c9a2f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af194c2592b013704f855ddb469c9a2f6">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[1/4]</span></h2>
+<a id="af1a3a8aed4236cb1a52f65c72054a758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a3a8aed4236cb1a52f65c72054a758">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,19 +306,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;The list of images to&#160;</td>
+          <td class="paramtype">&quot;A file having the list of images to&#160;</td>
           <td class="paramname"><em>undistort</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">one per line. If not&#160;</td>
+          <td class="paramtype">one per line. &quot; &quot;If not&#160;</td>
           <td class="paramname"><em>specified</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot; &quot;it is assumed they are passed in directly on the command line.&quot;&#160;</td>
+          <td class="paramtype">it is assumed they are passed in directly on the command line.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -327,8 +331,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab572f5128add3e53f49ea7749546fc92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab572f5128add3e53f49ea7749546fc92">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[2/4]</span></h2>
+<a id="a1fef1ba351fd2b21bae77cef5e6d21c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fef1ba351fd2b21bae77cef5e6d21c7">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +352,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;If not&#160;</td>
+          <td class="paramtype">&quot;Output directory. If not&#160;</td>
           <td class="paramname"><em>specified</em>, </td>
         </tr>
         <tr>
@@ -367,8 +371,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f24a142045bec11101747725421347e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f24a142045bec11101747725421347e">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[3/4]</span></h2>
+<a id="abd8ea8275e6df43b64eedfb0b958b71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8ea8275e6df43b64eedfb0b958b71c">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEFINE_string </td>
+          <td>(</td>
+          <td class="paramtype">output_list&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Save the undistorted images with names given in this&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot; &quot;instead of using the output directory.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c783c120e8fe2aeb66392b746211df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c783c120e8fe2aeb66392b746211df4">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +432,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Which of bot's cameras to use. Anything except nav_cam is experimental.&quot;&#160;</td>
+          <td class="paramtype">&quot;Which of bot's cameras to use. Tested with nav_cam and sci_cam.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -401,8 +445,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a9c856ed7a559be6c84e41f9ce91094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a9c856ed7a559be6c84e41f9ce91094">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[4/4]</span></h2>
+<a id="afe4bf237bdf3a31b9756c14d50659857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4bf237bdf3a31b9756c14d50659857">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +472,41 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be displayed below. &quot; &quot;Specify as:'crop_x crop_y'.&quot;&#160;</td>
+          <td class="paramtype">apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be printed on screen. &quot; &quot;Specify as:'crop_x crop_y'.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1fb8225e247cebdd66e39ef15b3643a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1fb8225e247cebdd66e39ef15b3643a">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEFINE_string </td>
+          <td>(</td>
+          <td class="paramtype">undistorted_intrinsics&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Save to this file the undistorted camera intrinsics.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -120,16 +120,16 @@ $(document).ready(function(){initNavTree('rapid__ekf__ros__ekf_8h_source.html','
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rapid__sub__ros__pub_8h.html">dds_ros_bridge/rapid_sub_ros_pub.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="util_8h.html">dds_ros_bridge/util.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dds_ros_bridge/rapid_sub_ros_pub.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dds_ros_bridge/util.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ff_msgs/EkfState.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;AstrobeeConstants.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dds_msgs/AstrobeeConstants.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;knDds/DdsTypedSupplier.h&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;EkfStateSupport.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;dds_msgs/EkfStateSupport.h&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;rapidDds/RapidConstants.h&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -166,8 +166,6 @@ $(document).ready(function(){initNavTree('rapid__ekf__ros__ekf_8h_source.html','
 <div class="ttc" id="aclassff_1_1RapidSubRosPub_html"><div class="ttname"><a href="classff_1_1RapidSubRosPub.html">ff::RapidSubRosPub</a></div><div class="ttdoc">base class for rapid subscriber to ros publisher</div><div class="ttdef"><b>Definition:</b> rapid_sub_ros_pub.h:42</div></div>
 <div class="ttc" id="aclassff_1_1RapidEkfToRos_html_a695e67ee0e5360f806a607d4532fa074"><div class="ttname"><a href="classff_1_1RapidEkfToRos.html#a695e67ee0e5360f806a607d4532fa074">ff::RapidEkfToRos::CopyVec3D</a></div><div class="ttdeci">void CopyVec3D(const rapid::Vec3d &amp;vec_in, geometry_msgs::Vector3 &amp;vec_out)</div><div class="ttdef"><b>Definition:</b> rapid_ekf_ros_ekf.cc:70</div></div>
 <div class="ttc" id="aclassff_1_1RapidEkfToRos_html"><div class="ttname"><a href="classff_1_1RapidEkfToRos.html">ff::RapidEkfToRos</a></div><div class="ttdef"><b>Definition:</b> rapid_ekf_ros_ekf.h:47</div></div>
-<div class="ttc" id="autil_8h_html"><div class="ttname"><a href="util_8h.html">util.h</a></div></div>
-<div class="ttc" id="arapid__sub__ros__pub_8h_html"><div class="ttname"><a href="rapid__sub__ros__pub_8h.html">rapid_sub_ros_pub.h</a></div></div>
 <!-- HTML footer for doxygen 1.9.0-->
 <!-- start footer part -->
 </body>

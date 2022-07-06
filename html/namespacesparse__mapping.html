@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -142,10 +142,10 @@ Functions</h2></td></tr>
 <tr class="separator:a1395e274a0d4afd9ed2a521e71648a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381cf5b0bd5ec0e2f329a7ce6f5127ae"><td class="memItemLeft" align="right" valign="top">ceres::LossFunction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a381cf5b0bd5ec0e2f329a7ce6f5127ae">GetLossFunction</a> (std::string cost_fun, double th)</td></tr>
 <tr class="separator:a381cf5b0bd5ec0e2f329a7ce6f5127ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a871462089373eb0315dcf8a9f47c76d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a871462089373eb0315dcf8a9f47c76d5">BundleAdjust</a> (std::vector&lt; std::map&lt; int, int &gt; &gt; const &amp;pid_to_cid_fid, std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;cid_to_keypoint_map, double focal_length, std::vector&lt; Eigen::Affine3d &gt; *cid_to_cam_t_global, std::vector&lt; Eigen::Vector3d &gt; *pid_to_xyz, std::vector&lt; std::map&lt; int, int &gt; &gt; const &amp;user_pid_to_cid_fid, std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;user_cid_to_keypoint_map, std::vector&lt; Eigen::Vector3d &gt; *user_pid_to_xyz, ceres::LossFunction *loss, ceres::Solver::Options const &amp;options, ceres::Solver::Summary *summary, int first=0, int last=std::numeric_limits&lt; int &gt;::max(), bool fix_cameras=false, bool fix_all_xyz=false)</td></tr>
-<tr class="separator:a871462089373eb0315dcf8a9f47c76d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7a24258990cca08d6091df9304f799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a4a7a24258990cca08d6091df9304f799">BundleAdjust</a> (std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;features_n, double focal_length, std::vector&lt; Eigen::Affine3d &gt; *cam_t_global_n, Eigen::Matrix3Xd *pid_to_xyz, ceres::LossFunction *loss, ceres::Solver::Options const &amp;options, ceres::Solver::Summary *summary)</td></tr>
-<tr class="separator:a4a7a24258990cca08d6091df9304f799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9415293f1fca64df41f7857df1324fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a9415293f1fca64df41f7857df1324fd2">BundleAdjust</a> (std::vector&lt; std::map&lt; int, int &gt; &gt; const &amp;pid_to_cid_fid, std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;cid_to_keypoint_map, double focal_length, std::vector&lt; Eigen::Affine3d &gt; *cid_to_cam_t_global, std::vector&lt; Eigen::Vector3d &gt; *pid_to_xyz, std::vector&lt; std::map&lt; int, int &gt; &gt; const &amp;user_pid_to_cid_fid, std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;user_cid_to_keypoint_map, std::vector&lt; Eigen::Vector3d &gt; *user_pid_to_xyz, ceres::LossFunction *loss, ceres::Solver::Options const &amp;options, ceres::Solver::Summary *summary, int first=0, int last=std::numeric_limits&lt; int &gt;::max(), bool fix_cameras=false, std::set&lt; int &gt; const &amp;fixed_cameras=std::set&lt; int &gt;())</td></tr>
+<tr class="separator:a9415293f1fca64df41f7857df1324fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4edfd2658b66babb43c511734f76c90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#ab4edfd2658b66babb43c511734f76c90">BundleAdjustSmallSet</a> (std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;features_n, double focal_length, std::vector&lt; Eigen::Affine3d &gt; *cam_t_global_n, Eigen::Matrix3Xd *pid_to_xyz, ceres::LossFunction *loss, ceres::Solver::Options const &amp;options, ceres::Solver::Summary *summary)</td></tr>
+<tr class="separator:ab4edfd2658b66babb43c511734f76c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a559ac9461e03ff1f8e038761f03e1749"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a559ac9461e03ff1f8e038761f03e1749">RandomInt</a> (int min, int max)</td></tr>
 <tr class="separator:a559ac9461e03ff1f8e038761f03e1749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387745a6901fa7db888a36defeaef9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a387745a6901fa7db888a36defeaef9a8">SelectRandomObservations</a> (const std::vector&lt; Eigen::Vector3d &gt; &amp;all_landmarks, const std::vector&lt; Eigen::Vector2d &gt; &amp;all_observations, size_t num_selected, std::vector&lt; <a class="el" href="namespacecv.html#a17f8af95b76535bd387f4909850c8810">cv::Point3d</a> &gt; *landmarks, std::vector&lt; <a class="el" href="namespacecv.html#a32986d8c6fd05949688352abd112509f">cv::Point2d</a> &gt; *observations)</td></tr>
@@ -234,12 +234,12 @@ Functions</h2></td></tr>
 <tr class="separator:a74ac229b4cc83649a5e057a67d748e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d68dec8c95250eb80c40f56d008db55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a5d68dec8c95250eb80c40f56d008db55">CloseLoop</a> (<a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *s)</td></tr>
 <tr class="separator:a5d68dec8c95250eb80c40f56d008db55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ff42a5f7bb1cd891f5a3666a19ac85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a66ff42a5f7bb1cd891f5a3666a19ac85">BundleAdjust</a> (bool fix_cameras, <a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *map)</td></tr>
-<tr class="separator:a66ff42a5f7bb1cd891f5a3666a19ac85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988b7df9c0f38e03886b590c41cc14c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a988b7df9c0f38e03886b590c41cc14c3">BundleAdjustment</a> (<a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *s, ceres::LossFunction *loss, const ceres::Solver::Options &amp;options, ceres::Solver::Summary *summary, int first=0, int last=std::numeric_limits&lt; int &gt;::max(), bool fix_cameras=false)</td></tr>
-<tr class="separator:a988b7df9c0f38e03886b590c41cc14c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1646ff992a2a855f8762abca8b842d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a1646ff992a2a855f8762abca8b842d20">AppendMapFile</a> (std::string const &amp;mapOut, std::string const &amp;mapIn, int num_image_overlaps_at_endpoints, double outlier_factor, bool bundle_adjust)</td></tr>
-<tr class="separator:a1646ff992a2a855f8762abca8b842d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd17aac2ead3533aa2f8df657c0c5ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#afd17aac2ead3533aa2f8df657c0c5ffe">BundleAdjust</a> (bool fix_all_cameras, <a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *map, std::set&lt; int &gt; const &amp;fixed_cameras=std::set&lt; int &gt;())</td></tr>
+<tr class="separator:afd17aac2ead3533aa2f8df657c0c5ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbc3828798cad10b8263be751ec612b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#acbbc3828798cad10b8263be751ec612b">BundleAdjustment</a> (<a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *s, ceres::LossFunction *loss, const ceres::Solver::Options &amp;options, ceres::Solver::Summary *summary, int first=0, int last=std::numeric_limits&lt; int &gt;::max(), bool fix_all_cameras=false, std::set&lt; int &gt; const &amp;fixed_cameras=std::set&lt; int &gt;())</td></tr>
+<tr class="separator:acbbc3828798cad10b8263be751ec612b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac881c2e4bfd582d0ad16dd907e46ca42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#ac881c2e4bfd582d0ad16dd907e46ca42">AppendMapFile</a> (std::string const &amp;mapOut, std::string const &amp;mapIn, int num_image_overlaps_at_endpoints, double outlier_factor, bool bundle_adjust, bool fix_first_map)</td></tr>
+<tr class="separator:ac881c2e4bfd582d0ad16dd907e46ca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40767feb07de5ded867e9ef18acab83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#ab40767feb07de5ded867e9ef18acab83">MergeMaps</a> (<a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *A_in, <a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *B_in, int num_image_overlaps_at_endpoints, double outlier_factor, std::string const &amp;output_map, <a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *C_out)</td></tr>
 <tr class="separator:ab40767feb07de5ded867e9ef18acab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6203c8b2b84c1224c7b107d73621acb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a6203c8b2b84c1224c7b107d73621acb1">ExtractSubmap</a> (std::vector&lt; std::string &gt; *keep_ptr, <a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *map_ptr)</td></tr>
@@ -286,6 +286,8 @@ Functions</h2></td></tr>
 <tr class="separator:a11a466bd59fe65d4cf7f79fb21c3bbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a097ed707a09e64622363e314d136fefe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a097ed707a09e64622363e314d136fefe">BuildMapPerformMatching</a> (openMVG::matching::PairWiseMatches *match_map, std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;cid_to_keypoint_map, std::vector&lt; cv::Mat &gt; const &amp;cid_to_descriptor_map, <a class="el" href="classcamera_1_1CameraParameters.html">camera::CameraParameters</a> const &amp;camera_params, <a class="el" href="namespacesparse__mapping.html#abd088aff381de91829bef0082f919a86">CIDPairAffineMap</a> *relative_affines, std::mutex *match_mutex, int i, int j, bool compute_rays_angle, double *rays_angle)</td></tr>
 <tr class="separator:a097ed707a09e64622363e314d136fefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3d90b7ab54c54773e04e849b36b3ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#aca3d90b7ab54c54773e04e849b36b3ce">haveSharedElements</a> (std::vector&lt; std::string &gt; const &amp;A, std::vector&lt; std::string &gt; const &amp;B)</td></tr>
+<tr class="separator:aca3d90b7ab54c54773e04e849b36b3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af046950757f05c004de871fd261b65d3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#af046950757f05c004de871fd261b65d3">estimateCloseDistance</a> (std::vector&lt; Eigen::Vector3d &gt; const &amp;vec)</td></tr>
 <tr class="separator:af046950757f05c004de871fd261b65d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095c088654a2cb188d5bbe7fd90f623c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a095c088654a2cb188d5bbe7fd90f623c">TransformTracks</a> (std::map&lt; int, int &gt; const &amp;cid2cid, bool rm_tracks_of_len_one, std::vector&lt; std::map&lt; int, int &gt; &gt; *pid_to_cid_fid)</td></tr>
@@ -387,8 +389,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1646ff992a2a855f8762abca8b842d20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1646ff992a2a855f8762abca8b842d20">&#9670;&nbsp;</a></span>AppendMapFile()</h2>
+<a id="ac881c2e4bfd582d0ad16dd907e46ca42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac881c2e4bfd582d0ad16dd907e46ca42">&#9670;&nbsp;</a></span>AppendMapFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +423,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bundle_adjust</em>&#160;</td>
+          <td class="paramname"><em>bundle_adjust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fix_first_map</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -725,8 +733,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a66ff42a5f7bb1cd891f5a3666a19ac85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66ff42a5f7bb1cd891f5a3666a19ac85">&#9670;&nbsp;</a></span>BundleAdjust() <span class="overload">[1/3]</span></h2>
+<a id="afd17aac2ead3533aa2f8df657c0c5ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd17aac2ead3533aa2f8df657c0c5ffe">&#9670;&nbsp;</a></span>BundleAdjust() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -735,13 +743,19 @@ Functions</h2></td></tr>
           <td class="memname">void sparse_mapping::BundleAdjust </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fix_cameras</em>, </td>
+          <td class="paramname"><em>fix_all_cameras</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structsparse__mapping_1_1SparseMap.html">sparse_mapping::SparseMap</a> *&#160;</td>
-          <td class="paramname"><em>map</em>&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; int &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>fixed_cameras</em> = <code>std::set&lt;int&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -754,68 +768,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a7a24258990cca08d6091df9304f799"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7a24258990cca08d6091df9304f799">&#9670;&nbsp;</a></span>BundleAdjust() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sparse_mapping::BundleAdjust </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>features_n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>focal_length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; Eigen::Affine3d &gt; *&#160;</td>
-          <td class="paramname"><em>cam_t_global_n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::Matrix3Xd *&#160;</td>
-          <td class="paramname"><em>pid_to_xyz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ceres::LossFunction *&#160;</td>
-          <td class="paramname"><em>loss</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ceres::Solver::Options const &amp;&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ceres::Solver::Summary *&#160;</td>
-          <td class="paramname"><em>summary</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Perform bundle adjustment.</p>
-<p>This variant assumes that all cameras see that same points. This is meant to be used to do 2 or 3 camera refinements however it can do N cameras just fine. </p>
-
-</div>
-</div>
-<a id="a871462089373eb0315dcf8a9f47c76d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a871462089373eb0315dcf8a9f47c76d5">&#9670;&nbsp;</a></span>BundleAdjust() <span class="overload">[3/3]</span></h2>
+<a id="a9415293f1fca64df41f7857df1324fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9415293f1fca64df41f7857df1324fd2">&#9670;&nbsp;</a></span>BundleAdjust() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -907,8 +861,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fix_all_xyz</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">std::set&lt; int &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>fixed_cameras</em> = <code>std::set&lt;int&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -923,8 +877,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a988b7df9c0f38e03886b590c41cc14c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a988b7df9c0f38e03886b590c41cc14c3">&#9670;&nbsp;</a></span>BundleAdjustment()</h2>
+<a id="acbbc3828798cad10b8263be751ec612b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbc3828798cad10b8263be751ec612b">&#9670;&nbsp;</a></span>BundleAdjustment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -969,7 +923,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fix_cameras</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>fix_all_cameras</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; int &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>fixed_cameras</em> = <code>std::set&lt;int&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -978,6 +938,66 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4edfd2658b66babb43c511734f76c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4edfd2658b66babb43c511734f76c90">&#9670;&nbsp;</a></span>BundleAdjustSmallSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sparse_mapping::BundleAdjustSmallSet </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; Eigen::Matrix2Xd &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>features_n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>focal_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Eigen::Affine3d &gt; *&#160;</td>
+          <td class="paramname"><em>cam_t_global_n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix3Xd *&#160;</td>
+          <td class="paramname"><em>pid_to_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ceres::LossFunction *&#160;</td>
+          <td class="paramname"><em>loss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ceres::Solver::Options const &amp;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ceres::Solver::Summary *&#160;</td>
+          <td class="paramname"><em>summary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform bundle adjustment.</p>
+<p>This variant assumes that all cameras see that same points. This is meant to be used to do 2 or 3 camera refinements however it can do N cameras just fine. </p>
 
 </div>
 </div>
@@ -1762,6 +1782,34 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>th</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca3d90b7ab54c54773e04e849b36b3ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3d90b7ab54c54773e04e849b36b3ce">&#9670;&nbsp;</a></span>haveSharedElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sparse_mapping::haveSharedElements </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

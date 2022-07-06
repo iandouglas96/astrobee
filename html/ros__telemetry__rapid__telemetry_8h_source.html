@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('ros__telemetry__rapid__telemetry_8h_so
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config__reader_8h.html">config_reader/config_reader.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ros__sub__rapid__pub_8h.html">dds_ros_bridge/ros_sub_rapid_pub.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;dds_ros_bridge/ros_sub_rapid_pub.h&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;ff_msgs/CameraState.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;ff_msgs/CameraStatesStamped.h&quot;</span></div>
@@ -127,9 +127,9 @@ $(document).ready(function(){initNavTree('ros__telemetry__rapid__telemetry_8h_so
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ros/ros.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;AstrobeeConstants.h&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;TelemetryConfigSupport.h&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;TelemetryStateSupport.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;dds_msgs/AstrobeeConstants.h&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;dds_msgs/TelemetryConfigSupport.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;dds_msgs/TelemetryStateSupport.h&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceff.html">ff</a> {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -194,7 +194,6 @@ $(document).ready(function(){initNavTree('ros__telemetry__rapid__telemetry_8h_so
 <div class="ttc" id="aconfig__reader_8h_html"><div class="ttname"><a href="config__reader_8h.html">config_reader.h</a></div></div>
 <div class="ttc" id="afault__tester_8cc_html_a304ead58a6e6ee273904fcf88b8b69fb"><div class="ttname"><a href="fault__tester_8cc.html#a304ead58a6e6ee273904fcf88b8b69fb">config_params</a></div><div class="ttdeci">config_reader::ConfigReader config_params</div><div class="ttdef"><b>Definition:</b> fault_tester.cc:12</div></div>
 <div class="ttc" id="asignal__lights_8h_html_a0b57aa10271a66f3dc936bba1d2f3830"><div class="ttname"><a href="signal__lights_8h.html#a0b57aa10271a66f3dc936bba1d2f3830">state</a></div><div class="ttdeci">uint8_t state</div><div class="ttdef"><b>Definition:</b> signal_lights.h:3</div></div>
-<div class="ttc" id="aros__sub__rapid__pub_8h_html"><div class="ttname"><a href="ros__sub__rapid__pub_8h.html">ros_sub_rapid_pub.h</a></div></div>
 <div class="ttc" id="aclassff_1_1RosTelemetryRapidTelemetry_html_a177c212477dccb2e75a13e5491a89716"><div class="ttname"><a href="classff_1_1RosTelemetryRapidTelemetry.html#a177c212477dccb2e75a13e5491a89716">ff::RosTelemetryRapidTelemetry::config_supplier_</a></div><div class="ttdeci">ConfigSupplierPtr config_supplier_</div><div class="ttdef"><b>Definition:</b> ros_telemetry_rapid_telemetry.h:74</div></div>
 <div class="ttc" id="aclassff_1_1RosTelemetryRapidTelemetry_html"><div class="ttname"><a href="classff_1_1RosTelemetryRapidTelemetry.html">ff::RosTelemetryRapidTelemetry</a></div><div class="ttdef"><b>Definition:</b> ros_telemetry_rapid_telemetry.h:43</div></div>
 <div class="ttc" id="aclassff_1_1RosTelemetryRapidTelemetry_html_a1c61dc334b50ee6b5c566910acaa4d8a"><div class="ttname"><a href="classff_1_1RosTelemetryRapidTelemetry.html#a1c61dc334b50ee6b5c566910acaa4d8a">ff::RosTelemetryRapidTelemetry::ConfigSupplierPtr</a></div><div class="ttdeci">std::unique_ptr&lt; ConfigSupplier &gt; ConfigSupplierPtr</div><div class="ttdef"><b>Definition:</b> ros_telemetry_rapid_telemetry.h:68</div></div>

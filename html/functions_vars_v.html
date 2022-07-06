@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -99,6 +99,15 @@ $(document).ready(function(){initNavTree('functions_vars_v.html',''); initResiza
 <li>val
 : <a class="el" href="structarm_1_1JointInfo.html#ad700107f36a39d67a691f7f450b5631b">arm::JointInfo</a>
 </li>
+<li>valid_3d_points
+: <a class="el" href="structlocalization__measurements_1_1DepthCorrespondences.html#a5338e507371546f48480f35d373b1859">localization_measurements::DepthCorrespondences</a>
+</li>
+<li>valid_image_points
+: <a class="el" href="structlocalization__measurements_1_1DepthCorrespondences.html#a1842a7f94edfbe9113f79a858c389ab0">localization_measurements::DepthCorrespondences</a>
+</li>
+<li>value
+: <a class="el" href="structlocalization__common_1_1TimestampedValue.html#a7b55c759ff3e27a998c12cc7f1ebf2f8">localization_common::TimestampedValue&lt; T &gt;</a>
+</li>
 <li>value_
 : <a class="el" href="classDimU.html#ad20439db793b35c0442e8419a8525666">DimU</a>
 , <a class="el" href="classrviz_1_1SliderProperty.html#a20eadf378d86165f3f5a5f596aebf964">rviz::SliderProperty</a>
@@ -152,32 +161,26 @@ $(document).ready(function(){initNavTree('functions_vars_v.html',''); initResiza
 </li>
 <li>verbose
 : <a class="el" href="structgraph__optimizer_1_1GraphOptimizerParams.html#ae1de9650dbc2fd4b961d13ad8bc27492">graph_optimizer::GraphOptimizerParams</a>
+, <a class="el" href="structoptimization__common_1_1OptimizationParams.html#acb06b39b1a501183ccada3f4d6758dcb">optimization_common::OptimizationParams</a>
 </li>
 <li>verbose_cheirality
-: <a class="el" href="structgraph__localizer_1_1SmartProjectionFactorAdderParams.html#ae6fa1913ab886a39eefc8ecebc333fce">graph_localizer::SmartProjectionFactorAdderParams</a>
+: <a class="el" href="structgraph__localizer_1_1SemanticFlowFactorAdderParams.html#af203284277cd859b73d415443d1460d6">graph_localizer::SemanticFlowFactorAdderParams</a>
+, <a class="el" href="structgraph__localizer_1_1SmartProjectionFactorAdderParams.html#ae6fa1913ab886a39eefc8ecebc333fce">graph_localizer::SmartProjectionFactorAdderParams</a>
+</li>
+<li>verbose_optimization
+: <a class="el" href="structpoint__cloud__common_1_1PointCloudWithKnownCorrespondencesAlignerParams.html#aa66c081ff8ad437caf3f4a8393f55c25">point_cloud_common::PointCloudWithKnownCorrespondencesAlignerParams</a>
 </li>
 <li>verboseCheirality_
-: <a class="el" href="classgtsam_1_1LocProjectionFactor.html#a997063e93adf36ae7880ba9d2c844e27">gtsam::LocProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
+: <a class="el" href="classgtsam_1_1InverseDepthProjectionFactor.html#a018d06f2fb04ec2a7940eb0b18ebc4e5">gtsam::InverseDepthProjectionFactor</a>
+, <a class="el" href="classgtsam_1_1LocProjectionFactor.html#a997063e93adf36ae7880ba9d2c844e27">gtsam::LocProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
+, <a class="el" href="classgtsam_1_1TolerantProjectionFactor.html#a3eedf51d4ece1f94b4f11dceef968440">gtsam::TolerantProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
 </li>
 <li>vertical
 : <a class="el" href="structButton.html#a0d8044416066459ba2edc3f2d8e607df">Button</a>
 </li>
-<li>vis_
-: <a class="el" href="classekf_1_1Ekf.html#ab081299b8b0fdc2d90d6665bebc49359">ekf::Ekf</a>
-, <a class="el" href="classgnc__autocode_1_1GncEkfAutocode.html#a13a7639c0833017a54e507e39e47e8fe">gnc_autocode::GncEkfAutocode</a>
-</li>
 <li>vl
-: <a class="el" href="structgraph__bag_1_1LiveMeasurementSimulatorParams.html#abd25cb1a1d15a4d8c80b1eaeee7f3d45">graph_bag::LiveMeasurementSimulatorParams</a>
-, <a class="el" href="structgraph__localizer_1_1FeatureCounts.html#a5478260d1ea19fe86008f4bce4d3dd4f">graph_localizer::FeatureCounts</a>
-</li>
-<li>vl_camera_id_
-: <a class="el" href="classekf_1_1Ekf.html#a40c38c56c4a1c9a8a2b440be55a32fbb">ekf::Ekf</a>
-</li>
-<li>vl_reg_sub_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a5e76c84bee4788d340b6f544e900dfe4">ekf::EkfWrapper</a>
-</li>
-<li>vl_sub_
-: <a class="el" href="classekf_1_1EkfWrapper.html#aff3c49f9dadaca449c3d3b7d441d7f89">ekf::EkfWrapper</a>
+: <a class="el" href="structgraph__localizer_1_1FeatureCounts.html#a5478260d1ea19fe86008f4bce4d3dd4f">graph_localizer::FeatureCounts</a>
+, <a class="el" href="structlocalization__analysis_1_1LiveMeasurementSimulatorParams.html#afa30f960c82eb1c9a53ceb5fc355280d">localization_analysis::LiveMeasurementSimulatorParams</a>
 </li>
 <li>vocab_db_
 : <a class="el" href="structsparse__mapping_1_1SparseMap.html#ab7ccc59924ffc69f1338b602c3f7a652">sparse_mapping::SparseMap</a>

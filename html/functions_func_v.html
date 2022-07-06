@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('functions_func_v.html',''); initResiza
 : <a class="el" href="classjsonloader_1_1ValueField.html#a9f57bdca096c325b8420ed8376398ac7">jsonloader::ValueField&lt; T &gt;</a>
 </li>
 <li>values()
-: <a class="el" href="classgraph__optimizer_1_1GraphOptimizer.html#aeb3f71f75f1cf01e2f03dddd5ce9a7db">graph_optimizer::GraphOptimizer</a>
+: <a class="el" href="classgraph__optimizer_1_1GraphOptimizer.html#ac7b9c9c40e82b29d44b38fe5c0ff0096">graph_optimizer::GraphOptimizer</a>
 , <a class="el" href="classgraph__optimizer_1_1GraphValues.html#a29f337975ffe0b15d2160d8efd973d1b">graph_optimizer::GraphValues</a>
 </li>
 <li>VecToPoint()
@@ -160,7 +160,9 @@ $(document).ready(function(){initNavTree('functions_func_v.html',''); initResiza
 : <a class="el" href="classlocalization__common_1_1CombinedNavStateCovariances.html#a355ec6b5d401eef84f90f5afdab4a125">localization_common::CombinedNavStateCovariances</a>
 </li>
 <li>verboseCheirality()
-: <a class="el" href="classgtsam_1_1LocProjectionFactor.html#a6627592722ce299b0113a2a4f6346c69">gtsam::LocProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
+: <a class="el" href="classgtsam_1_1InverseDepthProjectionFactor.html#a50997daba2c6304950f6b23df0a307ce">gtsam::InverseDepthProjectionFactor</a>
+, <a class="el" href="classgtsam_1_1LocProjectionFactor.html#a6627592722ce299b0113a2a4f6346c69">gtsam::LocProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
+, <a class="el" href="classgtsam_1_1TolerantProjectionFactor.html#aef28edb839994c4fb7f00338dd9ab462">gtsam::TolerantProjectionFactor&lt; POSE, LANDMARK, CALIBRATION &gt;</a>
 </li>
 <li>VersionCallback()
 : <a class="el" href="classspeed__cam_1_1SpeedCamNode.html#a42ebe235180ef674cc0f6de2f9600c90">speed_cam::SpeedCamNode</a>
@@ -168,29 +170,14 @@ $(document).ready(function(){initNavTree('functions_func_v.html',''); initResiza
 <li>VideoCallback()
 : <a class="el" href="classRosMarkerTrackingAdaptor.html#aebde41efb86f677dcb5d9173823ad049">RosMarkerTrackingAdaptor</a>
 </li>
-<li>VideoWriter()
-: <a class="el" href="classekf__video_1_1VideoWriter.html#a56489fc5c9979b903c7d9083d8254cd8">ekf_video::VideoWriter</a>
-</li>
 <li>VisualCallback()
 : <a class="el" href="structlocalization__manager_1_1Pipeline.html#a49467e7facfee3c2321b7a89bde9e47f">localization_manager::Pipeline</a>
 </li>
-<li>VisualeyezBridge()
-: <a class="el" href="classvisualeyez_1_1VisualeyezBridge.html#a1797d9c51ef83847b2f38414cbd9e1d0">visualeyez::VisualeyezBridge</a>
-</li>
-<li>VisualeyezClient()
-: <a class="el" href="classvisualeyez_1_1VisualeyezClient.html#a55e48e2bf9eb45dd57543d31811f4088">visualeyez::VisualeyezClient</a>
-</li>
-<li>VisualeyezServer()
-: <a class="el" href="classvisualeyez_1_1VisualeyezServer.html#a6c4e6107c05944dba35898090a436ffa">visualeyez::VisualeyezServer</a>
+<li>visualize()
+: <a class="el" href="classgraph__localizer_1_1SemanticObjectTracker.html#a8fbf9a669d9828267634723de7302df7">graph_localizer::SemanticObjectTracker</a>
 </li>
 <li>VisualizeFrustum()
 : <a class="el" href="classalgebra__3d_1_1FrustumPlanes.html#a86663960d1cbf63d6a665208eda1820e">algebra_3d::FrustumPlanes</a>
-</li>
-<li>VisualLandmarksRegister()
-: <a class="el" href="classekf_1_1Ekf.html#a08faa04ccc31d8732d27b540ce291fad">ekf::Ekf</a>
-</li>
-<li>VisualLandmarksUpdate()
-: <a class="el" href="classekf_1_1Ekf.html#a86e7d3790eea4845548bcaf9585ebbab">ekf::Ekf</a>
 </li>
 <li>VisualTimeoutCallback()
 : <a class="el" href="structlocalization__manager_1_1Pipeline.html#ad2a1fe2f83f320b1df125b21c6ef9550">localization_manager::Pipeline</a>
@@ -212,12 +199,6 @@ $(document).ready(function(){initNavTree('functions_func_v.html',''); initResiza
 , <a class="el" href="classlocalization__common_1_1RateTimer.html#af2ae4159e5238c7b044ef3353676998a">localization_common::RateTimer</a>
 , <a class="el" href="classlocalization__common_1_1RosTimer.html#a5a0cea66ab1a90788e8cc4161e6ab8a3">localization_common::RosTimer</a>
 , <a class="el" href="classlocalization__common_1_1Timer.html#a528f5c79de3c4ee02ec8374c8a0b6f3f">localization_common::Timer</a>
-</li>
-<li>VLRegisterCamera()
-: <a class="el" href="classekf_1_1EkfWrapper.html#aacf39cb968cf6932b637cf72d5e91ec3">ekf::EkfWrapper</a>
-</li>
-<li>VLVisualLandmarksCallBack()
-: <a class="el" href="classekf_1_1EkfWrapper.html#abaf3e678f63593efe65a35fb927bd69f">ekf::EkfWrapper</a>
 </li>
 <li>VLVisualLandmarksCallback()
 : <a class="el" href="classgraph__localizer_1_1GraphLocalizerWrapper.html#aa95457d57a652742a57ba11993764237">graph_localizer::GraphLocalizerWrapper</a>

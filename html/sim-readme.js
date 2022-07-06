@@ -1,48 +1,32 @@
 var sim_readme =
 [
-    [ "Running the Astrobee Simulator", "running-the-sim.html", [
-      [ "Obtaining media", "sim-readme.html#autotoc_md417", null ],
-      [ "Running the Simulator", "sim-readme.html#autotoc_md418", null ],
-      [ "Advanced Simulator Information", "sim-readme.html#autotoc_md419", [
-        [ "Communication Nodes", "running-the-sim.html#autotoc_md420", null ],
-        [ "Setting up your Environment", "running-the-sim.html#autotoc_md421", null ],
-        [ "Running the Simulator", "running-the-sim.html#autotoc_md422", [
-          [ "Simulator Flags", "running-the-sim.html#autotoc_md423", [
-            [ "pose", "running-the-sim.html#autotoc_md424", null ],
-            [ "gds", "running-the-sim.html#autotoc_md425", null ],
-            [ "rviz", "running-the-sim.html#autotoc_md426", null ],
-            [ "sviz", "running-the-sim.html#autotoc_md427", null ],
-            [ "gviz", "running-the-sim.html#autotoc_md428", null ],
-            [ "dds", "running-the-sim.html#autotoc_md429", null ],
-            [ "speed", "running-the-sim.html#autotoc_md430", null ],
-            [ "ns", "running-the-sim.html#autotoc_md431", null ],
-            [ "robot", "running-the-sim.html#autotoc_md432", null ],
-            [ "default_robot", "running-the-sim.html#autotoc_md433", null ],
-            [ "perch", "running-the-sim.html#autotoc_md434", null ],
-            [ "world", "running-the-sim.html#autotoc_md435", null ],
-            [ "debug", "running-the-sim.html#autotoc_md436", null ]
-          ] ]
+    [ "Common Simulation Issues", "sim-issues.html", [
+      [ "Obtaining media", "sim-readme.html#autotoc_md528", null ],
+      [ "Running the Simulator", "sim-readme.html#autotoc_md529", null ],
+      [ "Advanced Simulator Information", "sim-readme.html#autotoc_md530", [
+        [ "The program 'roslaunch/rosrun' is currently not installed", "sim-issues.html#autotoc_md557", null ],
+        [ "[Sim.launch] is neither a launch file in package [astrobee] ...", "sim-issues.html#autotoc_md558", null ],
+        [ "Rospack Error Finding Package", "sim-issues.html#autotoc_md559", null ],
+        [ "Issues Starting up the Simulator", "sim-issues.html#autotoc_md560", null ],
+        [ "Robot Body Does Not Show up in RVIZ", "sim-issues.html#autotoc_md561", null ],
+        [ "No Image message in RVIZ", "sim-issues.html#autotoc_md562", null ],
+        [ "Heartbeat Fault Detected", "sim-issues.html#autotoc_md563", [
+          [ "DDS ROS Bridge", "sim-issues.html#autotoc_md564", null ],
+          [ "Multiple Heartbeat Failures", "sim-issues.html#autotoc_md565", null ]
         ] ],
-        [ "Moving the Robot", "running-the-sim.html#autotoc_md437", [
-          [ "Ground Data System", "running-the-sim.html#autotoc_md438", [
-            [ "External Users", "running-the-sim.html#autotoc_md439", null ],
-            [ "Internal Users", "running-the-sim.html#autotoc_md440", null ]
-          ] ],
-          [ "Teleop Tool", "running-the-sim.html#autotoc_md441", null ],
-          [ "Guest Science Applications", "running-the-sim.html#autotoc_md442", null ]
+        [ "Command Fails due to Robot State", "sim-issues.html#autotoc_md566", null ],
+        [ "Tolerance Violated Errors", "sim-issues.html#autotoc_md567", null ],
+        [ "Keep in Zone Violation", "sim-issues.html#autotoc_md568", null ],
+        [ "Unable to Plan a Segment", "sim-issues.html#autotoc_md569", null ],
+        [ "Couldn't Configure the Mobility Node", "sim-issues.html#autotoc_md570", null ],
+        [ "Could Not Query the Pose of Robot", "sim-issues.html#autotoc_md571", null ],
+        [ "Dock Action Server Not Connected", "sim-issues.html#autotoc_md572", null ],
+        [ "GDS Node - Process has Died", "sim-issues.html#autotoc_md573", null ],
+        [ "The Robot is Spinning, Flying Higher Than the World, or Jumping Around Erratically", "sim-issues.html#autotoc_md574", [
+          [ "Teleop Tool Reports No Publisher for Acks Topic", "sim-issues.html#autotoc_md575", null ],
+          [ "Bumble not in repository", "sim-issues.html#autotoc_md576", null ]
         ] ],
-        [ "Images", "running-the-sim.html#autotoc_md443", null ],
-        [ "Launching Multiple Robots", "running-the-sim.html#autotoc_md444", null ]
-      ] ],
-      [ "Simulator Issues", "running-the-sim.html#autotoc_md445", null ]
-    ] ],
-    [ "Advanced Simulation Information", "advanced-sim-info.html", [
-      [ "Rviz in Localization Only Mode", "advanced-sim-info.html#autotoc_md411", null ],
-      [ "Collisions and performance", "advanced-sim-info.html#autotoc_md412", null ],
-      [ "Frame consistency between simulation and perception", "advanced-sim-info.html#autotoc_md413", null ],
-      [ "Development and debugging", "advanced-sim-info.html#autotoc_md414", null ],
-      [ "Changing Simulation properties", "advanced-sim-info.html#autotoc_md415", null ],
-      [ "Under the hood", "advanced-sim-info.html#autotoc_md416", null ]
-    ] ],
-    [ "Common Simulation Issues", "sim-issues.html", null ]
+        [ "Gazebo shows up black in VM Ubuntu 20.04", "sim-issues.html#autotoc_md577", null ]
+      ] ]
+    ] ]
 ];

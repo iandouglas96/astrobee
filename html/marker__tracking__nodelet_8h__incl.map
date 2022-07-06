@@ -1,5 +1,5 @@
-<map id="localization/marker_tracking/ros/include/marker_tracking_node/marker_tracking_nodelet.h" name="localization/marker_tracking/ros/include/marker_tracking_node/marker_tracking_nodelet.h">
-<area shape="rect" id="node1" title=" " alt="" coords="1397,5,1598,76"/>
+<map id="localization/marker_tracking/include/marker_tracking_node/marker_tracking_nodelet.h" name="localization/marker_tracking/include/marker_tracking_node/marker_tracking_nodelet.h">
+<area shape="rect" id="node1" title=" " alt="" coords="1381,5,1613,76"/>
 <area shape="rect" id="node2" href="$marker__tracker_8h.html" title=" " alt="" coords="741,124,909,165"/>
 <area shape="rect" id="node42" href="$ff__nodelet_8h.html" title=" " alt="" coords="2486,392,2626,419"/>
 <area shape="rect" id="node3" href="$arconfigio_8h.html" title=" " alt="" coords="1595,310,1805,337"/>

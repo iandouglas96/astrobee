@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.14.3</span>
+   &#160;<span id="projectnumber">0.16.6</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -158,6 +158,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0299f9d2ab9fc8bd2fd5df5c1ec10307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a84f4e2601316c9a029a6b9df6ac161"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structgraph__localizer_1_1CombinedNavStateGraphValuesParams.html">CombinedNavStateGraphValuesParams</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__localizer_1_1CombinedNavStateGraphValues.html#a4a84f4e2601316c9a029a6b9df6ac161">params</a> () const</td></tr>
 <tr class="separator:a4a84f4e2601316c9a029a6b9df6ac161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78292a4b6169f4152b8f3dd9432b4854"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacelocalization__common.html#ae558927c458010e767b03b93e4516e0c">localization_common::Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__localizer_1_1CombinedNavStateGraphValues.html#a78292a4b6169f4152b8f3dd9432b4854">Timestamps</a> () const</td></tr>
+<tr class="separator:a78292a4b6169f4152b8f3dd9432b4854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d717bef6e3fa0dd7d9217d73832abe"><td class="memItemLeft" align="right" valign="top">boost::optional&lt; <a class="el" href="namespacelocalization__common.html#ae558927c458010e767b03b93e4516e0c">localization_common::Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__localizer_1_1CombinedNavStateGraphValues.html#af5d717bef6e3fa0dd7d9217d73832abe">Timestamp</a> (<a class="el" href="namespacegraph__optimizer.html#a405123f22dac528e313eb2a2a835023d">graph_optimizer::KeyCreatorFunction</a> key_creator_function, const gtsam::Key key) const</td></tr>
+<tr class="separator:af5d717bef6e3fa0dd7d9217d73832abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgraph__optimizer_1_1GraphValues"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraph__optimizer_1_1GraphValues')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraph__optimizer_1_1GraphValues.html">graph_optimizer::GraphValues</a></td></tr>
 <tr class="memitem:a6e740c6bf03e3049cdeba0d3cf9594fd inherit pub_methods_classgraph__optimizer_1_1GraphValues"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__optimizer_1_1GraphValues.html#a6e740c6bf03e3049cdeba0d3cf9594fd">GraphValues</a> (std::shared_ptr&lt; gtsam::Values &gt; <a class="el" href="classgraph__optimizer_1_1GraphValues.html#a29f337975ffe0b15d2160d8efd973d1b">values</a>=std::shared_ptr&lt; gtsam::Values &gt;(new gtsam::Values()))</td></tr>
 <tr class="separator:a6e740c6bf03e3049cdeba0d3cf9594fd inherit pub_methods_classgraph__optimizer_1_1GraphValues"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -714,7 +718,7 @@ template&lt;class FACTOR &gt; </div>
 </div>
 </div>
 <a id="a0299f9d2ab9fc8bd2fd5df5c1ec10307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0299f9d2ab9fc8bd2fd5df5c1ec10307">&#9670;&nbsp;</a></span>Timestamp()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0299f9d2ab9fc8bd2fd5df5c1ec10307">&#9670;&nbsp;</a></span>Timestamp() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -724,6 +728,51 @@ template&lt;class FACTOR &gt; </div>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>key_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5d717bef6e3fa0dd7d9217d73832abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d717bef6e3fa0dd7d9217d73832abe">&#9670;&nbsp;</a></span>Timestamp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::optional&lt; <a class="el" href="namespacelocalization__common.html#ae558927c458010e767b03b93e4516e0c">lc::Time</a> &gt; graph_localizer::CombinedNavStateGraphValues::Timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraph__optimizer.html#a405123f22dac528e313eb2a2a835023d">graph_optimizer::KeyCreatorFunction</a>&#160;</td>
+          <td class="paramname"><em>key_creator_function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gtsam::Key&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78292a4b6169f4152b8f3dd9432b4854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78292a4b6169f4152b8f3dd9432b4854">&#9670;&nbsp;</a></span>Timestamps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacelocalization__common.html#ae558927c458010e767b03b93e4516e0c">lc::Time</a> &gt; graph_localizer::CombinedNavStateGraphValues::Timestamps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
